@@ -78,27 +78,30 @@ const Hero = () => {
                             initial='hidden'
                             whileInView={'show'}
                             viewport={{ once: false, amount: 0.3 }}
+                            style={{ position: 'relative' }}
                             className=' w-[300px] h-[101.37px] xl:w-[625px] xl:h-[100px] mix-blend-luminosity'>
                             <Image
                                 src={'/assets/hero/bird.png'}
                                 fill
                                 alt=''
                                 className='object-contain'
+                                sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
                             />
+
                         </motion.div>
-                        
+
                     </MouseParallaxChild>
                 </MouseParallaxContainer>
                 <motion.div
-                 variants={fadeIn('up', 1)}
-                 initial='hidden'
-                 whileInView={'show'}
-                 viewport={{ once: false, amount: 0.7 }} 
-                className='min-h-[60px] flex items-center mb-6 text-[26px]'>
+                    variants={fadeIn('up', 1)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{ once: false, amount: 0.7 }}
+                    className='min-h-[60px] flex items-center mb-6 text-[26px]'>
                     <div className='hidden xl:flex items-ceneter xl:gap-x-0'>
                         <div>{/** Typle something there like locatiojn */}</div>
                         <div className='relative w-2 h-2 mx-2 flex items-center justify-center'>
-                            <Image fill src={'/assets/hero/dot.svg'} />
+                            <Image fill src={'/assets/hero/dot.svg'} alt='' sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px" />
                         </div>
                     </div>
 
@@ -113,7 +116,7 @@ const Hero = () => {
             </div>
 
             {/** image */}
-            
+
             <motion.div
                 variants={fadeIn('left', 0.1)}
                 initial='hidden'
@@ -127,8 +130,9 @@ const Hero = () => {
                     alt=''
                     quality={100}
                     priority
+                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
                 />
-                
+
             </motion.div>
         </div>
     </section>

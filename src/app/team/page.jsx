@@ -14,7 +14,7 @@ import { fadeIn } from '../../../variants';
 
 const Hero = () => {
     return <section className='h-[80vh] bg-white  xl:h-[2100px]' id='home'>
-        <div>
+        <div style={{ position: 'relative' }}>
 
         <div className='container mx-auto  h-full flex justify-center items-center xl:justify-start'>
             {/** text */}
@@ -28,7 +28,7 @@ const Hero = () => {
                     Foundation Team
                 </motion.div>
             </div>
-            <section className="h-[80vh] bg-white  xl:h-[700px] flexCenter flex-col ">
+            <section style={{ position: 'relative' }} className="h-[80vh] bg-white  xl:h-[700px] flexCenter flex-col ">
                 <motion.div
                     // variants={fadeIn('left', 0.1)}
                     initial='hidden'
@@ -41,6 +41,7 @@ const Hero = () => {
                         <Image
                             src={'/assets/hero/singer.png'}
                             // src={AA}
+                            alt=''
                             width={50}
                             height={50}
                             className="h-full w-auto  rounded-3xl border shadow-md"
@@ -65,6 +66,7 @@ const Hero = () => {
                         <Image
                             src={'/assets/hero/singer.png'}
                             // src={AA}
+                            alt=''
                             width={50}
                             height={50}
                             className="h-full w-auto  rounded-3xl border shadow-md"
@@ -89,6 +91,7 @@ const Hero = () => {
                         <Image
                             src={'/assets/hero/singer.png'}
                             // src={AA}
+                            alt=''
                             width={50}
                             height={50}
                             className="h-full w-auto  rounded-3xl border shadow-md"
@@ -135,7 +138,7 @@ const Hero = () => {
                     </motion.div>
                 </motion.div>
             </div>
-            <section className="h-[80vh] bg-white  xl:h-[700px] flexCenter flex-col">
+            <section style={{ position: 'relative' }} className="h-[80vh] bg-white  xl:h-[700px] flexCenter flex-col">
                 <motion.div
                     // variants={fadeIn('left', 0.1)}
                     initial='hidden'
@@ -149,6 +152,7 @@ const Hero = () => {
                             src={'/assets/hero/singer.png'}
                             // src={AA}
                             width={50}
+                            alt=''
                             height={50}
                             className="h-full w-auto  rounded-3xl border shadow-md"
                         />
@@ -171,6 +175,7 @@ const Hero = () => {
                         {/* <Image fill src={'/assets/hero/singer.png'} /> */}
                         <Image
                             src={'/assets/hero/singer.png'}
+                            alt=''
                             // src={AA}
                             width={50}
                             height={50}
@@ -196,6 +201,7 @@ const Hero = () => {
                         <Image
                             src={'/assets/hero/singer.png'}
                             // src={AA}
+                            alt=''
                             width={50}
                             height={50}
                             className="h-full w-auto  rounded-3xl border shadow-md"
@@ -242,7 +248,7 @@ const Hero = () => {
                     </motion.div>
                 </motion.div>
             </div>
-            <section className="h-[80vh] bg-white  xl:h-[700px] flexCenter flex-col">
+            <section style={{ position: 'relative' }} className="h-[80vh] bg-white  xl:h-[700px] flexCenter flex-col">
                 <motion.div
                     // variants={fadeIn('left', 0.1)}
                     initial='hidden'
@@ -256,6 +262,7 @@ const Hero = () => {
                             src={'/assets/hero/singer.png'}
                             // src={AA}
                             width={50}
+                            alt=''
                             height={50}
                             className="h-full w-auto  rounded-3xl border shadow-md"
                         />
@@ -281,6 +288,7 @@ const Hero = () => {
                             // src={AA}
                             width={50}
                             height={50}
+                            alt=''
                             className="h-full w-auto  rounded-3xl border shadow-md"
                         />
                         <div className="flexBetween flex-col">
@@ -305,6 +313,7 @@ const Hero = () => {
                             // src={AA}
                             width={50}
                             height={50}
+                            alt=''
                             className="h-full w-auto  rounded-3xl border shadow-md"
                         />
                         <div className="flexBetween flex-col">

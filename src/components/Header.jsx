@@ -55,6 +55,7 @@ const Header = () => {
                     width={50}
                     height={205}
                     className="cursor-pointer"
+                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
                     priority />
             </Link>
             {/**nav */}
