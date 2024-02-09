@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  @apply bg-primary font-montserrat text-black;
+}
+
+.pretitle{
+  @apply font-alexBrush rounded-full text-[42px] text-accent leading-none;
+}
+.h2{
+  @apply text-[32px] xl:text-[38px] font-semibold leading-tight;
+}
+.btn{
+  @apply w-full rounded-full cursor-pointer transition-all flex justify-center items-center font-medium;
+}
+.btn-sm {
+  @apply w-[146px] h-[50px];
+}
+.btn-lg {
+  @apply w-[160px] h-[54px];
+}
+.btn-accent {
+  @apply bg-accent text-white hover:bg-accent-hover;
+}
+.btn-white {
+  @apply bg-white text-primary hover:bg-white/80;
+}
+.section{
+  @apply py-12 xl:py-24;
+}
+.active {
+  @apply border-b-2 border-accent;
+}
+/* globals.css */
+
+.container-fluid {
+  padding: 20px;
+}
+
+#navbar-div {
+  margin-bottom: 20px;
+}
+
+.topbar {
+  border-radius: 10px;
+}
+
+.navbar-right {
+  border-radius: 10px;
+}
+
+.section {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.well {
+  background-color: #f8f8f8;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.thumbnail {
+  background-color: #f8f8f8;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.thumbnail-content {
+  position: relative;
+  overflow: hidden;
+}
+
+.thumbnail-content::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  z-index: 1;
+  animation: shining 2s infinite;
+}
+
+@keyframes shining {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 10px auto;
+  width: 80%;
+}
+.small-text {
+  font-size: 10px;
+  transition: text-shadow 0.3s ease; /* Transition for glow effect */
+}
+
+.small-text:hover {
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.8); /* Glow effect on hover */
+}
+
+.small-text a {
+  background: linear-gradient(to right, #4c7cf5, #63b8ff); /* Gradient background */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: background-position 0.3s ease; /* Transition for gradient color change */
+}
+
+.small-text a:hover {
+  background-position: 100% 0; /* Change gradient color on hover */
+}

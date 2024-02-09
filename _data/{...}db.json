@@ -1,0 +1,139 @@
+{
+    "events": [
+        {
+            "id": 1,
+            "name": "Armatrix Automations Private Limited (AAPL)",
+            "date": {
+                "day": "3",
+                "month": "Jan",
+                "year": "2024"
+            },
+            "location": {
+                "city": "Kanpur",
+                "State": "Uttar Pradesh",
+                "country": "INDIA"
+            },
+            "phone": 910000000000
+        },
+        {
+            "id": 2,
+            "name": "Prateesh Awasthi",
+            "date": {
+                "day": "4",
+                "month": "Feb",
+                "year": "2024"
+            },
+            "position": "Director",
+            "location": {
+                "city": "Kanpur",
+                "State": "Uttar Pradesh",
+                "country": "INDIA"
+            },
+            "phone": 6398344497
+        },
+        {
+            "id": 3,
+            "name": "Ayush Ranjan",
+            "date": {
+                "day": "6",
+                "month": "January",
+                "year": "2024"
+            },
+            "position": "Director",
+            "location": {
+                "city": "Kanpur",
+                "State": "Uttar Pradesh",
+                "country": "INDIA"
+            },
+            "phone": 9076855758
+        },
+        {
+            "id": 4,
+            "name": "Vishrant Dave",
+            "date": {
+                "day": "4",
+                "month": "January",
+                "year": "2024"
+            },
+            "position": "Director",
+            "location": {
+                "city": "Kanpur",
+                "State": "Uttar Pradesh",
+                "country": "INDIA"
+            },
+            "phone": 9987986515
+        }
+    ],
+    "albums": [
+        {
+            "id": 1,
+            "img": "/assets/albums/cover/cover-1.png",
+            "name": "album 1",
+            "tracks": [
+                {
+                    "name": "Armatrix Automations Private Limited (AAPL)",
+                    "src": "assets/freedom.mp3"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "img": "/assets/albums/cover/cover-2.png",
+            "name": "album 2",
+            "tracks": [
+                {
+                    "name": "Prateesh Awasthi",
+                    "src": "assets/freedom.mp3"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "img": "/assets/albums/cover/cover-3.png",
+            "name": "album 3",
+            "tracks": [
+                {
+                    "name": "Ayush Ranjan",
+                    "src": "assets/freedom.mp3"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "img": "/assets/albums/cover/cover-4.png",
+            "name": "album 4",
+            "tracks": [
+                {
+                    "name": "Vishrant Dave",
+                    "src": "assets/freedom.mp3"
+                }
+            ]
+        }
+    ],
+    "posts": [
+        {
+            "id": 1,
+            "date": "2024-02-20",
+            "title": "Armatrix Automations Private Limited",
+            "description": "The Company's status is Active It's a company limited by shares with an authorized capital of Rs 10.00 Lakh and a paid-up capital of Rs 1.00 Lakh, as per the Ministry of Corporate Affairs (MCA) records."
+        },
+        {
+            "id": 2,
+            "date": "2024-02-20",
+            "title": "Prateesh Awasthi",
+            "description": "Prateesh Awasthi, director with Armatrix Automations Private Limited, is registered with the Ministry of Corporate Affairs (MCA), bearing DIN 10451287.        Prateesh Awasthi is currently associated with Armatrix Automations Private Limited appointed as Director and the paid-up capital Armatrix Automations Private Limited ₹100,000.00."
+        },
+        {
+            "id": 3,
+            "date": "2024-02-20",
+            "title": "Ayush Ranjan",
+            "description": "Ayush Ranjan, director with Armatrix Automations Private Limited, is registered with the Ministry of Corporate Affairs (MCA), bearing DIN 10451286. He is an Indian staying in Allahabad, Uttar Pradesh, India.        Ayush Ranjan is currently associated with Armatrix Automations Private Limited appointed as Director and the paid-up capital Armatrix Automations Private Limited ₹100,000.00."
+        },
+        {
+            "id": 4,
+            "date": "2024-02-20",
+            "title": "Vishrant Dave",
+            "description": "Vishrant Dave, director with Armatrix Automations Private Limited, is registered with the Ministry of Corporate Affairs (MCA), bearing DIN 10451285. He is an Indian staying in Thane, Maharashtra, India.        Vishrant Dave is currently associated with Armatrix Automations Private Limited appointed as Director and the paid-up capital Armatrix Automations Private Limited ₹100,000.00."
+        }
+    ]
+}
