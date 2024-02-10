@@ -15,7 +15,7 @@ import { fadeIn } from '../../../variants';
 const EventBox = ({ events }) => {
     // console.log(events);
     return (
-        <motion.div 
+        <motion.div legacybehavior 
         variants={fadeIn ('up', 0.4)}
         initial='hidden'
         whileInView={'show'}
