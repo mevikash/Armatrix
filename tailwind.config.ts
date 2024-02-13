@@ -23,7 +23,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         singerOverlay: 'url(/assets/hero/singer-overlay.png)',
-        newsletter: 'url(/assets/newsletter/bg.png)'
+        newsletter: 'url(/b1.jpg)'
       },
       fontFamily: {
         alexBrush: ['var(--font-alexBrush)', 'sans-serif'],

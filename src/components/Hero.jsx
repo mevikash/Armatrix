@@ -39,7 +39,7 @@ const Hero = () => {
                             whileInView={'show'}
                             viewport={{ once: false, amount: 0.3 }}
                             // className=' w-[500px] h-[101.37px] xl:w-[7250px] xl:h-[244.97px] text-[30px] font-black text-primary w-[100px] h-[101.37px] xl:w-[7025px] xl:h:-[2404.97px]'>
-                            className=' w-[300px] h-[101.37px] xl:w-[625px] xl:h-[244.97px] text-[100px] mix-blend-luminosity'>
+                            className=' w-[433px] h-[101.37px] xl:w-[625px] xl:h-[244.97px] text-[100px] mix-blend-luminosity'>
 
                             {/* <Image 
                         src={'/assets/hero/typo-2.svg'} 

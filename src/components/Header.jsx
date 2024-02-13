@@ -6,6 +6,8 @@ import Image from "next/image";
 import Link from 'next/link';
 
 import Nav from './Nav';
+import NavMobile from './NavMobile';
+import MenuBtn from './MenuBtn';
 import logo from '../../public/logo4.svg'
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
@@ -22,7 +24,7 @@ const Header = () => {
         //add event listner
         window.addEventListener('scroll', handleScroll);
 
-        
+        //clear event listener
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
@@ -51,6 +53,10 @@ const Header = () => {
                     </a>
                 </Link>
                 <Nav containerStyles='hidden xl:flex items-center gap-x-18' />
+                <NavMobile />
+                <div className="absolute left-7 top-9 z-10 xl:hidden">
+                    <MenuBtn />
+                </div>
             </div>
         </motion.header>
     );

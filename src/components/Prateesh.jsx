@@ -40,7 +40,6 @@ const Prateesh = () => {
             variants={fadeIn('left', 0.1)}
             initial='hidden'
             whileInView={'show'}
-            // viewport={{ once: false, amount: 0.7 }} 
             className="flexCenter max-container relative w-full">
                 <div className="absolute flex bg-white py-5 pl-5 pr-7 gap-20 rounded-3xl border shadow-md md:left-[70%] lg:top-80">
                     <Image

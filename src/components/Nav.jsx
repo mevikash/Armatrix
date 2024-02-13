@@ -1,25 +1,74 @@
+'use client'
 import Link from 'next/link';
+import {useMediaQuery} from 'react-responsive';
+// import { NavLink } from "react-router-dom";
 
-export default function Nav() {
+const Nav = ({ containerStyles, LinkStyles }) => {
+    const isDesktop = useMediaQuery({
+        query: '(min-width: 1310px)',
+    })
     return (
-        <nav className="flex xl:flex absolute right-20 text-[50px]">
+    <nav className={`${containerStyles}`}>
+        <div className='flex xl:flex absolute right-20 text-[50px]'>
+
             <ul className="hidden sm:flex">
-                <li className="ml-10 uppercase hover:border-b text-xl text-black">
-                    <Link href="/">
-                        Home
-                    </Link>
-                </li>
-                <li className="ml-10 uppercase hover:border-b text-xl text-black">
-                    <Link href="/Contacts">
-                        Contacts
-                    </Link>
-                </li>
-                <li className="ml-10 uppercase hover:border-b text-xl text-black">
-                    <Link href="/team">
-                        Team
-                    </Link>
-                </li>
-            </ul>
+                  <li className="ml-10 uppercase hover:border-b text-xl text-black">
+                      <Link href="/">
+                          Home
+                      </Link>
+                  </li>
+                  <li className="ml-10 uppercase hover:border-b text-xl text-black">
+                      <Link href="/Contacts">
+                          Contacts
+                      </Link>
+                  </li>
+                  <li className="ml-10 uppercase hover:border-b text-xl text-black">
+                      <Link href="/team">
+                          Team
+                      </Link>
+                  </li>
+              </ul>
+        </div>
+            
         </nav>
     );
 };
+        
+export default Nav;
+// import Link from 'next/link';
+// import { NavLink } from "react-router-dom";
+
+// export default function Nav  ()  {
+//     return (
+//         <nav className="flex xl:flex absolute right-20 text-[50px]">
+//             <ul className="hidden sm:flex">
+//                 <li className="ml-10 uppercase hover:border-b text-xl text-black">
+//                     <Link 
+//                     // className={`link ${ '/' ? 'active' : ''}`} 
+//                     href="/">
+//                         <legacyBehavior>Home</legacyBehavior>
+//                     </Link>
+//                 </li>
+//                 <li className="ml-10 uppercase hover:border-b text-xl text-black">
+//                     {/* <Link href="/Contacts">
+//                         <legacyBehavior>Contact Us</legacyBehavior>
+//                     </Link> */}
+//                     <a href='Contacts'>Contacts</a>
+//                 </li>
+//                 <li className="ml-10 uppercase hover:border-b text-xl text-black">
+//                     {/* <Link href="/team">
+//                         <legacyBehavior>Team</legacyBehavior>
+//                     </Link> */}
+//                     <a href='team'>Team</a>
+//                 </li>
+//                 {/* <li className="bg-gradient-to-b from-blue-50 to-red-100 ml-10 uppercase hover:border-b text-xl text-black">
+//                     <Link href="/team">
+//                         <legacyBehavior>Add</legacyBehavior>
+//                     </Link>
+//                 </li> */}
+//             </ul>
+            
+//         </nav>
+//     );
+// };
+
