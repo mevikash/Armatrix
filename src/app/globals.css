@@ -3,6 +3,25 @@
 @tailwind utilities;
 @import 'tailwind-scrollbar';
 
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* *::-webkit-scrollbar-track {
+  background: var(#f9a23a);
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(#f9a23a);
+  border-radius: 14px;
+  border: 3px solid var(#f9a23a);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(#f9a23a);
+} */
 
 body{
   @apply bg-primary font-montserrat text-black;
@@ -103,16 +122,32 @@ body{
 }
 
 .footer {
-  text-align: center;
-  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #201F23;
+  padding: 40px;
+  
 }
 
-.footer hr {
-  border: none;
-  border-top: 1px solid #ccc;
-  margin: 10px auto;
-  width: 80%;
+.footer div {
+  padding: 5px;
 }
+
+.middle {
+  position: relative;
+  text-align:center;
+}
+
+.middle img {
+  width: 40px; /* Adjust as needed */
+  height: 40px; /* Adjust as needed */
+}
+
+.right {
+  margin-left: auto;
+}
+
 .small-text {
   font-size: 20px;
   transition: text-shadow 0.3s ease; /* Transition for glow effect */
@@ -133,9 +168,307 @@ body{
 .small-text a:hover {
   background-position: 100% 0; /* Change gradient color on hover */
 }
-html, 
- :host { 
-   line-height: 1.5; /* 1 */ 
-   -webkit-text-size-adjust: 100%; /* 2 */ 
-   -moz-tab-size: 4; /* 3 */ 
-   tab-size: 4; /* 3 */ }
+
+.timeline-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 20px;
+}
+.timeline-container::before,
+.timeline-container::after {
+  content: "";
+  display: table;
+}
+.timeline-container::after {
+  clear: both;
+}
+
+.timeline-block {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  text-align: center;
+  position: relative;
+}
+
+.timeline-block .iconic {
+  width: 70px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+  text-align: center;
+  background-color: #fdf8f8;
+  border: 2px solid #070707;
+  border-radius: 50%;
+  position: relative;
+  transition: background-color 0.25s ease-in;
+}
+.timeline-block .iconic .fa {
+  color: #fff;
+  line-height: 70px;
+  transition: color 0.25s ease-in;
+}
+.timeline-block .iconic::before {
+  content: "";
+  border: 2px dashed #fafafa;
+  border-radius: 50%;
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  right: -7px;
+  bottom: -7px;
+}
+.timeline-block .iconic::after {
+  width: 1px;
+  height: 30px;
+  margin-bottom: -7px;
+  margin-left: -2px;
+  content: "";
+  border-left: 2px dashed #ffffff;
+  transform: translateY(100%);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+}
+.timeline-block:hover .iconic {
+  background-color: #ffffffbb;
+}
+.timeline-block:hover .iconic .fa {
+  color: #fdfdfd;
+}
+.timeline-block .heading {
+  padding-bottom: 10px;
+  position: relative;
+}
+.timeline-block .heading::after {
+  width: 50px;
+  height: 2px;
+  content: "";
+  display: block;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+}
+.timeline-block .text {
+  padding-top: 60px;
+  color: white;
+  position: relative;
+}
+.timeline-block .text::before {
+  width: 15px;
+  height: 15px;
+  display: block;
+  content: "";
+  background-color: #f1f1ee;
+  border-radius: 50%;
+  transform: translateY(50%) translateX(-50%);
+  position: absolute;
+  top: 30px;
+  left: 50%;
+}
+
+@media (min-width: 768px) {
+  .timeline-block {
+    width: 25%;
+    max-width: none;
+    margin-bottom: 0;
+    float: left;
+  }
+  .timeline-block::after {
+    width: 100%;
+    height: 1px;
+    content: "";
+    margin-top: -7px;
+    z-index: -1;
+    transform: translateY(-50%);
+    border-top: 3px dashed #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .timeline-block:last-child::after {
+    width: calc(50% - 5px);
+    left: 5px;
+  }
+
+  .timeline-block:nth-child(even) .iconic {
+    transform: translateY(200%);
+    top: 7px;
+  }
+  .timeline-block:nth-child(even) .iconic::after {
+    transform: translateY(-100%);
+    margin-bottom: auto;
+    margin-top: -7px;
+    bottom: auto;
+    top: 0;
+  }
+  .timeline-block:nth-child(even) .text {
+    transform: translateY(-50%);
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+  .timeline-block:nth-child(even) .text::before {
+    transform: translateY(-50%) translateX(-50%);
+    top: auto;
+    bottom: 30px;
+  }
+}
+.timeline-wrapper {
+  position: relative;
+  top: 0%;
+  overflow-x: auto;
+  width: 100%;
+  display: inline;
+}
+
+.timeline-container {
+  overflow-x: scroll; /* Enable horizontal scrolling */
+  
+  overflow-y: hidden; /* Hide vertical scrolling */
+  top: 80%;
+  display: flex;
+  padding: 180px; /* Adjust as needed */
+  scrollbar-width: thin; /* Set the width of the scrollbar */
+  scrollbar-color: rgba(248, 248, 248, 0.5) #201F23; /* Set the color of the scrollbar */
+}
+
+/* Track */
+.timeline-container::-webkit-scrollbar-track {
+  background: #f5f5f5; /* Color of the scrollbar track */
+}
+
+/* Handle */
+.timeline-container::-webkit-scrollbar-thumb {
+  background: #ffffff; /* Color of the scrollbar handle */
+}
+
+/* Handle on hover */
+.timeline-container::-webkit-scrollbar-thumb:hover {
+  background: #fafafa; /* Color of the scrollbar handle on hover */
+}
+
+
+.timeline-block {
+  flex: 0 0 auto;
+  /* Your timeline block styles */
+}
+
+.scroll-button {
+  position: absolute;
+  top: 86.8%;
+  transform: translateY(-90%);
+  padding: 20px;
+  background-color: rgba(248, 248, 248, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 20px;
+}
+
+.next-button {
+  right: 20px;
+}
+
+/* CSS */
+li {
+  /* Other styles */
+  position: relative; /* Ensure proper positioning of the underline */
+  list-style: none; /* Remove default list style */
+}
+
+li::after {
+  content: ''; /* Create pseudo-element for the underline */
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust as needed to position the underline */
+  width: 100%; /* Ensure full width */
+  height: 2px; /* Height of the underline */
+  background-color: transparent; /* Initially transparent */
+  transition: background-color 0.9s ease; /* Add transition effect */
+}
+
+li:hover::after {
+  background-color: #ffffff; /* Change color on hover */
+}
+
+
+/* Video inside the text */
+
+.video-section {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.video-section  video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-copy {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  font-size: 25vw;
+  line-height: 80vw;
+  background-color: #201F23;
+  user-select: none;
+  mix-blend-mode: multiply;
+}
+
+
+h1{
+  color: #ffffff;
+}
+
+.mevikash {
+  position: absolute;
+  top: 70%;
+  right: 0;
+  bottom: 80%;
+  left: 0;
+  display: flex;
+  user-select: none;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.pixel {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  font-size: 25vw;
+  /* line-height: 80vw; */
+  background-color: #000000;
+  user-select: none;
+  /* mix-blend-mode: multiply; */
+  opacity: 90%;
+}
+
+.pixel1 {
+  display: flex;
+  justify-content: center; /* Align horizontally at the center */
+  align-items: center; /* Align vertically at the center */
+  text-align: center; /* Align text at the center */
+  background-color: #333; /* Example background color */
+  padding: 20px;
+}
+

@@ -9,6 +9,7 @@ const config: Config = {
   mode: "jit",
 
   theme: {
+    
     container: {
       padding: {
         DEFAULT: '15px',
@@ -23,16 +24,18 @@ const config: Config = {
     extend: {
       backgroundImage: {
         singerOverlay: 'url(/assets/hero/singer-overlay.png)',
-        newsletter: 'url(/b1.jpg)'
+        newsletter: 'url(/b111.png)'
       },
       fontFamily: {
         alexBrush: ['var(--font-alexBrush)', 'sans-serif'],
         montserrat: ['var(--font-monsterrat)', 'sans-serif'],
       },
       colors: {
-        primary: '#11111',
+        primary: '#201F23',
         secondary: '#15138',
         tertiary: '#242445',
+        orange: '#FFA500',
+        green: '#BCD6D2',
         accent: {
           DEFAULT: '#7f1cfc',
           hover: '#6519c6',

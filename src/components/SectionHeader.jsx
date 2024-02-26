@@ -10,7 +10,7 @@ const SectionHeader =({pretitle, title}) =>{
             <motion.h3
             variants={fadeIn ('right', 0.4)}
             initial='hidden'
-            whileInView={'show'}
+            whileinview={'show'}
             viewport={{once: false, amount: 0.3}}
             className="pretitle">{pretitle}</motion.h3>
 
@@ -18,7 +18,7 @@ const SectionHeader =({pretitle, title}) =>{
             <motion.h2 
             variants={fadeIn ('right', 0.4)}
             initial='hidden'
-            whileInView={'show'}
+            whileinview={'show'}
             viewport={{once: false, amount: 0.3}}
             className="h2 mb-8">{title}</motion.h2>
         </header>

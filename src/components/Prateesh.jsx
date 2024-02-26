@@ -8,7 +8,7 @@ const Prateesh = () => {
             <motion.div 
             variants={fadeIn('right', 0.1)}
             initial='hidden'
-            whileInView={'show'}
+            whileinview={'show'}
             viewport={{ once: false, amount: 0.7 }} 
             className="flexCenter max-container relative w-full">
                 <div className="absolute flex bg-white py-8 pl-5 pr-7 gap-20 rounded-3xl border shadow-md md:right-[40%] lg:left-20 lg:top-20">

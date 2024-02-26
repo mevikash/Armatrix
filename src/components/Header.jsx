@@ -1,4 +1,4 @@
-// import React from "react";
+
 'use client' 
 import { useEffect, useState } from "react";
 
@@ -8,7 +8,7 @@ import Link from 'next/link';
 import Nav from './Nav';
 import NavMobile from './NavMobile';
 import MenuBtn from './MenuBtn';
-import logo from '../../public/logo4.svg'
+import logo from '../../public/logo6.png'
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 
@@ -40,19 +40,20 @@ const Header = () => {
                 : 'bg-transparent py-8 transition-all'
                 }`}
         >
-            <div className="bg-gradient-to-r from-gray-500/20 to-gray-100/20 shadow-black text-[25px] container mx-40 flex flex-col xl:flex-row items-center">
+            {/* <div className=" container sm:mx-10 mx-40 flex flex-col xl:flex-row items-center"> */}
+            <div className="container sm:mx-10 xl:mx-40 flex flex-col xl:flex-row items-center">
                 <Link href='/' legacyBehavior>
-                    <a className="cursor-pointer">
+                    <a className="cursor-pointer  absolute top-0">
                         <Image
                             src={logo}
                             alt="Logo"
-                            width={50}
-                            height={50}
+                            width={250}
+                            height={250}
                             priority
                         />
                     </a>
                 </Link>
-                <Nav containerStyles='hidden xl:flex items-center gap-x-18' />
+                <Nav containerStyles='hidden  xl:flex items-center gap-x-40' />
                 <NavMobile />
                 <div className="absolute left-7 top-9 z-10 xl:hidden">
                     <MenuBtn />
