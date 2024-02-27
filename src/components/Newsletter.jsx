@@ -12,7 +12,7 @@ import { fadeIn } from '../../variants';
 
 const Newsletter = () => {
     return (
-        <section className='bg-newsletter bg-fixed h-[1400px] bg-cover w-full bg-center bg-no-repeat'
+        <section className='bg-newsletter bg-fixed h-[10px] bg-cover w-full bg-center bg-no-repeat  xl:h-[1500px] md:h-[1500px]  lg:h-[1500px]  sm:h-[1500px]'
         >
             <div className='flex text-black flex-wrap justify-center items-center gap-0 py-60'>
                 <motion.div

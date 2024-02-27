@@ -20,7 +20,7 @@ const Timeline = () => {
     };
 
     return (
-        <section className="h-[100vh] bg-newsletter bg-fixed h-[1500px] bg-cover w-full bg-center bg-no-repeat xl:h-[850px] flexCenter flex-col">
+        <section className="h-[100vh] bg-newsletter bg-fixed h-[1500px] bg-cover w-full bg-center bg-no-repeat xl:h-[850px]  md:h-[1100px]  lg:h-[900px]  sm:h-[916px] flexCenter flex-col">
             
             <div className='pixel flex text-white flex-wrap justify-center items-center gap-10 py-20'>
                 <motion.div
