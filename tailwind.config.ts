@@ -18,7 +18,7 @@ const config: Config = {
     screens: {
       sm: '260px',
       md: '768px',
-      lg: '1024px',
+      lg: '1080px',
       xl: '1400px',
     },
     extend: {
@@ -33,7 +33,7 @@ const config: Config = {
       colors: {
         primary: '#201F23',
         secondary: '#15138',
-        tertiary: '#242445',
+        tertiary: '#201F23',
         orange: '#FFA500',
         green: '#BCD6D2',
         accent: {

@@ -8,13 +8,13 @@ const NavMobile = () => {
     const { isOpen, setIsOpen } = useContext(NavContext);
     return (
         <nav className={`${isOpen ? 'right-0' : '-right-full'} 
-        xl:hidden fixed  top-0 2-20 bottom-0 transition-all duration-500`}
-        containerstyles=' text-[0px] uppercase font-sm bg-primary  ' >
+        xl:hidden fixed  top-0 3-25 bottom-0 transition-all duration-500`}
+         >
             <div
             onClick={() => setIsOpen(false)}
-            className=' text-white xl:text-6xl md:text-6md sm:text-6sm lg:text-6lg  cursor-pointer'>
+            className=' text-white xl:text-1xl md:text-1md sm:text-1sm lg:text-1lg  cursor-pointer'>
                 <RiCloseLine className='text-6xl group flex flex-col gap-y-10 cursor-pointer xl:hidden group' />
-                <Nav className='relative left-20  ' />
+                <Nav />
                 </div>
         </nav>
     );

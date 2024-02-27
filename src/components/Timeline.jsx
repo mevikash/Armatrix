@@ -26,7 +26,7 @@ const Timeline = () => {
                 <motion.div
                     initial='hidden'
                     whileinview='show'
-                    className='text-4xl xl:text-6xl font-bold mb-0'>
+                    className='text-4xl xl:text-6xl sm:text-6sm font-bold mb-0'>
                     Timeline
                 </motion.div>
             </div>
@@ -37,7 +37,7 @@ const Timeline = () => {
                 <div className="timeline-container" ref={timelineContainerRef}>
                     <div className="timeline-block">
                         <div className="iconic"><Image
-                                    src='/assets/hero/a.jpeg'
+                                    src='/assets/hero/l1.png'
                                     width={200}
                                     height={200}
                                     className='rounded-full border shadow-md'
@@ -45,56 +45,52 @@ const Timeline = () => {
                                 /></div>
                         <div className="text">
                             <header className="heading">
-                                <h4 className="title">Event values 1</h4>
+                                <h4 className="title">July 2019</h4>
                             </header>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis atque temporibus fugit voluptatibus
-                                sit saepe</p>
+                            Three roommates start their journey at IIT Kanpur to pursue their undergraduate degree</p>
                         </div>
                     </div>
                     <div className="timeline-block">
                         <div className="iconic"><i className="fa fa-graduation-cap"></i></div>
                         <div className="text">
                             <header className="heading">
-                                <h4 className="title">Event values 1</h4>
+                                <h4 className="title">March 2023</h4>
                             </header>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis atque temporibus fugit voluptatibus
-                                sit saepe</p>
+                            Decision to start a robotics company is made and ideation stage begins</p>
                         </div>
                     </div>
                    
+                    
                     <div className="timeline-block">
-                        <div className="iconic"><i className="fa fa-graduation-cap"></i></div>
+                        <div className="iconic"></div>
                         <div className="text">
                             <header className="heading">
-                                <h4 className="title">Event values 1</h4>
+                                <h4 className="title">Nov 2023</h4>
                             </header>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis atque temporibus fugit voluptatibus
-                                sit saepe</p>
+                            Received Gradcapital Atomic Fellowship</p>
                         </div>
                     </div>
                     <div className="timeline-block">
                         <div className="iconic"><i className="fa fa-graduation-cap"></i></div>
                         <div className="text">
                             <header className="heading">
-                                <h4 className="title">Event values 1</h4>
+                                <h4 className="title">03 Jun 2024</h4>
                             </header>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis atque temporibus fugit voluptatibus
-                                sit saepe</p>
+                            Company Incorporated</p>
                         </div>
                     </div>
                     <div className="timeline-block">
                         <div className="iconic"><i className="fa fa-graduation-cap"></i></div>
                         <div className="text">
                             <header className="heading">
-                                <h4 className="title">Event values 1</h4>
+                                <h4 className="title">10 Jun 2024</h4>
                             </header>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis atque temporibus fugit voluptatibus
-                                sit saepe</p>
+                            Collaboration with Space Dynamics Lab, IIT Kanpur starts on the TIH Foundation - IIT Bombay funded Project</p>
                         </div>
                     </div>
                 </div>
