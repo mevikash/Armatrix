@@ -18,7 +18,7 @@ const Newsletter = () => {
                 <motion.div
                     initial='hidden'
                     whileInView='show'
-                    className='text-xl xl:text-8xl shadow rounded-xl font-bold mb-0'>
+                    className='text-xl xl:text-8xl sm:text-8xl shadow rounded-xl font-bold mb-0'>
                     Products
                 </motion.div>
             </div>
@@ -28,7 +28,7 @@ const Newsletter = () => {
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.7 }}
                 className="flexCenter max-container relative w-full">
-                <div className="absolute flex bg-white py-8 pl-5 pr-7 gap-20 rounded-3xl border shadow-md md:left-[60%] md:right-[2%] lg:top-30">
+                <div className="absolute flex bg-white py-8 pl-5 pr-7 gap-20 rounded-3xl border shadow-md sm:left-[30%] md:left-[60%] md:right-[2%] lg:top-30">
                 <Carousel showThumbs={false}>
                         <div>
                         <Image
@@ -83,7 +83,7 @@ const Newsletter = () => {
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.7 }}
                 className="flexCenter max-container relative w-full">
-                <div className="absolute flex bg-white py-8 pl-5 pr-5 gap-20 rounded-3xl border shadow-md md:right-[60%] md:left-[2%] lg:top-30">
+                <div className="absolute flex bg-white py-8 pl-5 pr-5 gap-20 rounded-3xl border shadow-md sm:right-[30%] md:right-[60%] md:left-[2%] sm:top-80 md:top-30 lg:top-30">
                 <Carousel showThumbs={false}>
                         <div>
                         <Image

@@ -1,12 +1,11 @@
-'use client';
-import Image from 'next/image';
+'use client';import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../../variants';
 
 const Hero = () => {
     
     return (
-        <section className="h-[200vh] bg-white xl:h-[1300px] sm:h-[2000px] lg:h-[1500px] md:h-[1800px]">
+        <section className=" bg-white xl:h-[1300px] md:h-[1800px]">
             <div style={{ backgroundColor: '#201F23', height: '200px' }}>
                 {/* Content goes here */}
             </div>
@@ -64,6 +63,7 @@ const Hero = () => {
                                     {/* <h4 className='font-bold mt-2'>Location: New York</h4> */}
                                 </div>
                             </motion.div>
+                            {/* Other team members */}
                             <motion.div
                                 className='flex flex-col items-center bg-white py-8 px-5 rounded-3xl border shadow-md md:mr-10 lg:mr-20 mb-8'>
                                 <Image
@@ -143,11 +143,11 @@ const Hero = () => {
                                 </div>
                             </motion.div>
 
+                            {/* Include similar code blocks for other team members */}
                         </div>
                     </div>
-
-                    {/* * Advisors Team */}
-                    <div className='text-black flex flex-col justify-center items-center py-12'>
+                    {/* Advisors Team */}
+                    <div className='text-black flex flex-col justify-center items-center py-0'>
                         <motion.div
                             // initial='hidden'
                             // whileInView='show'
@@ -156,61 +156,47 @@ const Hero = () => {
                             Collaborators
                         </motion.div>
                         <div className='flex flex-wrap justify-center items-center gap-0'>
-                            
-                                <div
-                                    initial='hidden'
-                                    // whileInView='show'
-                                    variants={fadeIn('up', 0.7)}
-                                    className='flex flex-col items-center bg-white py-8 px-5 md:mr-10 lg:mr-20 mb-8'>
-                                    <Image
-                                        src='/assets/hero/l1.png'
-                                        width={200}
-                                        height={200}
-                                        // className='rounded-full border shadow-md'
-                                        alt='Team Member Image'
+                            {/* Include collaborator images */}
+                            <motion.div
+                                className=' rounded-3xl  sm:mr-5 md:mr-10 lg:mr-20 mb-8'>
+                                <Image
+                                    src='/assets/hero/l1.png'
+                                    width={200}
+                                    height={200}
+                                    // className='rounded-full border shadow-md'
+                                    alt='Team Member Image'
+                                />
+                            </motion.div>
+                            <motion.div
+                                className=' rounded-3xl sm:mr-5 md:mr-10 lg:mr-20 mb-8'>
+                                <Image
+                                    src='/assets/hero/l2.svg'
+                                    width={200}
+                                    height={200}
+                                    // className='rounded-full border shadow-md'
+                                    alt='Team Member Image'
                                     />
-                                </div>
-                                <div
-                                    initial='hidden'
-                                    // whileInView='show'
-                                    variants={fadeIn('up', 0.7)}
-                                    className='flex flex-col items-center bg-white py-8 px-5 md:mr-10 lg:mr-20 mb-8'>
-                                    <Image
-                                        src='/assets/hero/l2.svg'
-                                        width={200}
-                                        height={200}
-                                        // className='rounded-full border shadow-md'
-                                        alt='Team Member Image'
+                                    </motion.div>
+                            <motion.div
+                                className=' rounded-3xl sm:mr-5 md:mr-10 lg:mr-20 mb-8'>
+                                <Image
+                                    src='/assets/hero/l3.png'
+                                    width={200}
+                                    height={200}
+                                    // className='rounded-full border shadow-md'
+                                    alt='Team Member Image'
                                     />
-                                </div>
-                                <div
-                                    // initial='hidden'
-                                    // whileInView='show'
-                                    variants={fadeIn('up', 0.7)}
-                                    className='flex flex-col items-center bg-white py-8 px-5 md:mr-10 lg:mr-20 mb-8'>
-                                    <Image
-                                        src='/assets/hero/l3.png'
-                                        width={200}
-                                        height={200}
-                                        // className='rounded-full border shadow-md'
-                                        alt='Team Member Image'
+                                    </motion.div>
+                            <motion.div
+                                className='  rounded-3xl sm:mr-5 md:mr-10 lg:mr-20 mb-8'>
+                                <Image
+                                    src='/assets/hero/l4.png'
+                                    width={200}
+                                    height={200}
+                                    // className='rounded-full border shadow-md'
+                                    alt='Team Member Image'
                                     />
-                                </div>
-                                <div
-                                    // initial='hidden'
-                                    // whileInView='show'
-                                    variants={fadeIn('up', 0.7)}
-                                    className='flex flex-col items-center bg-white py-8 px-5 md:mr-10 lg:mr-20 mb-8'>
-                                    <Image
-                                        src='/assets/hero/l4.png'
-                                        width={200}
-                                        height={200}
-                                        // className='rounded-full border shadow-md'
-                                        alt='Team Member Image'
-                                    />
-                                </div>
-                               
-                           
+                                    </motion.div>
                         </div>
                     </div>
                 </div>
