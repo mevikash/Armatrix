@@ -1,6 +1,6 @@
 
-'use client' 
-import { useEffect, useState } from "react";
+'use client' ;
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from 'next/link';
 import Nav from './Nav';
@@ -26,6 +26,7 @@ const Header = () => {
     }, []);
 
     const logoSize = active ? 100 : 250; // Adjust the logo size based on scroll position
+    const navHeight = active ? 80 : 120; // Adjust the navigation bar height based on scroll position
 
     return (
         <motion.header
@@ -35,7 +36,7 @@ const Header = () => {
             className={`fixed z-50 w-full ${active
                 ? 'bg-secondary py-6 transition-all'
                 : 'bg-transparent py-8 transition-all'
-                }`}
+            }`}
         >
             <div className="container sm:mx-10 xl:mx-40 flex flex-col xl:flex-row items-center">
                 <Link href='/' legacyBehavior>
@@ -65,4 +66,3 @@ const Header = () => {
 };
 
 export default Header;
-

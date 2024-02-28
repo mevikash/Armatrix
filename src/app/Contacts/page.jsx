@@ -70,7 +70,7 @@ const Contacts = () => {
     return (
 
 
-        <section className=" bg-white xl:h-[1300px] md:h-[1300px]">
+        <section className=" bg-white xl:h-[1200px] lg:h-[1200px] sm:h-[1200px] md:h-[1200px]">
 
             <div style={{ backgroundColor: '#201F23', height: '200px' }}>
                 {/* Content goes here */}
@@ -79,7 +79,7 @@ const Contacts = () => {
             <div className='flex text-black flex-wrap justify-center items-center gap-0 py-12'>
                 <motion.div
                     initial='hidden'
-                    className='text-xl xl:text-6xl sm:text-6xl shadow rounded-xl font-bold mb-0'>
+                    className='  xl:text-6xl lg:text-4xl md:text-3xl  sm:text-2xl shadow rounded-xl font-bold mb-0'>
                     Reach Out to Us
                 </motion.div>
             </div>
@@ -95,13 +95,13 @@ const Contacts = () => {
                                         
                                         <div className="flex items-center">
                                             <TfiLocationPin className="xl:text-8xl md:text-8md sm:text-8xl mr-2" /> {/* Adjust the icon size */}
-                                            <p className="xl:text-2xl md:text-md sm:text-sm">112/216, Swaroop Nagar, Kanpur, Uttar Pradesh - 208016, India</p>
+                                            <p className="xl:text-3xl lg:text-2xl md:text-2xl  sm:text-xl">112/216, Swaroop Nagar, Kanpur, Uttar Pradesh - 208016, India</p>
                                         </div>
                                         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
 
                                         <div className="flex items-center">
                                             <TfiEmail className="xl:text-6xl md:text-6md sm:text-6xl mr-2" /> {/* Adjust the icon size */}
-                                            <p className="xl:text-2xl md:text-md sm:text-sm">contact@armatrix.in</p>
+                                            <p className="xl:text-3xl lg:text-2xl md:text-2xl  sm:text-xl">contact@armatrix.in</p>
                                         </div>
                                     </div>
 
@@ -121,7 +121,7 @@ const Contacts = () => {
                                                 value={form.name}
                                                 onChange={handleChange}
                                                 placeholder=""
-                                                className='bg-tertiary xl:py-4 xl:px-60 sm:py-2 sm:px-30 lg:px-50 md:px-40 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+                                                className='bg-tertiary xl:py-4 xl:px-60 sm:py-2 sm:px-0 lg:px-40 lg:py-2 md:px-0 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
                                             />
                                         </label>
                                         <label className='flex flex-col'>
@@ -132,7 +132,7 @@ const Contacts = () => {
                                                 value={form.email}
                                                 onChange={handleChange}
                                                 placeholder=""
-                                                className='bg-tertiary  xl:py-4 xl:px-60 sm:py-2 sm:px-30 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+                                                className='bg-tertiary  xl:py-4 xl:px-60 sm:py-2 sm:px-0 lg:px-40 lg:py-2 md:px-0 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
                                             />
                                         </label>
                                         <label className='flex flex-col'>
@@ -143,7 +143,7 @@ const Contacts = () => {
                                                 value={form.message}
                                                 onChange={handleChange}
                                                 placeholder=''
-                                                className='bg-tertiary  xl:py-4 xl:px-60 sm:py-2 sm:px-30 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+                                                className='bg-tertiary xl:py-4 xl:px-60 sm:py-2 sm:px-0 lg:px-40 lg:py-2 md:px-0 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
                                             />
                                         </label>
 

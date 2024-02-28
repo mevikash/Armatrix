@@ -36,45 +36,57 @@ const Timeline = () => {
                 <div className="timeline-container" ref={timelineContainerRef}>
                     <div className="timeline-block max-w-xs mx-auto mb-12 text-center">
                         <div className="iconic">
-                            July 2019
+                             2019
                         </div>
                         <div className="text mt-4">
+                        <header className="heading">
+                                <h4 className="title">July 2019</h4>
+                            </header>
                             <p>Three roommates start their journey at IIT Kanpur to pursue their undergraduate degree</p>
                         </div>
                     </div>
                     <div className="timeline-block max-w-xs mx-auto mb-12 text-center">
                         <div className="iconic ">
-                        March 2023
+                         2023
                         </div>
                         <div className="text mt-4">
+                        <header className="heading">
+                                <h4 className="title">March 2023</h4>
+                            </header>
                             <p> Decision to start a robotics company is made and ideation stage begins</p>
                         </div>
                     </div>
 
                     <div className="timeline-block max-w-xs mx-auto mb-12 text-center">
                         <div className="iconic">
-                        Nav 2023
+                         2023
                         </div>
                         <div className="text mt-4">
-                            
+                        <header className="heading">
+                                <h4 className="title">Nav 2023</h4>
+                            </header>
                             <p> Received Gradcapital Atomic Fellowship</p>
                         </div>
                     </div>
                     <div className="timeline-block max-w-xs mx-auto mb-12 text-center">
                         <div className="iconic">
-                        03 Jan 2024
+                        2024
                         </div>
                         <div className="text mt-4">
-                            
+                        <header className="heading">
+                                <h4 className="title">03 Jan 2024</h4>
+                            </header>
                             <p> Company Incorporated</p>
                         </div>
                     </div>
                     <div className="timeline-block max-w-xs mx-auto mb-12 text-center">
                         <div className="iconic">
-                        10 Jan 2024
+                        2024
                         </div>
                         <div className="text mt-4">
-                            
+                        <header className="heading">
+                                <h4 className="title">10 Jan 2024</h4>
+                            </header>
                             <p> Collaboration with Space Dynamics Lab, IIT Kanpur starts on the TIH Foundation - IIT Bombay funded Project</p>
                         </div>
                     </div>

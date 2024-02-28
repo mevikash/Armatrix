@@ -197,16 +197,19 @@ body{
 .timeline-block .iconic {
   width: 70px;
   height: 70px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 18px;
+  margin: auto; /* Shorthand for margin-left and margin-right set to auto */
+  font-size: 20px;
   text-align: center;
   background-color: #fdf8f8;
   border: 1px solid #070707;
   border-radius: 50%;
   position: relative;
   transition: background-color 0.25s ease-in;
+  display: flex; /* Add flex display */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
 }
+
 .timeline-block .iconic .fa {
   color: #fff;
   line-height: 70px;
@@ -301,6 +304,22 @@ body{
     bottom: 30px;
   }
 }
+.timeline-block .heading {
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.timeline-block .heading::after {
+  content: ''; /* Create a pseudo-element */
+  width: 100%; /* Full width */
+  height: 2px; /* Height of the underline */
+  background-color: #ffffff; /* Color of the underline */
+  display: block; /* Display as block element */
+  position: absolute; /* Position relative to the parent */
+  bottom: 0; /* Position at the bottom */
+  left: 0; /* Align to the left */
+}
+
 .timeline-wrapper {
   position: relative;
   top: 0%;
