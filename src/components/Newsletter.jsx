@@ -19,7 +19,7 @@ const Newsletter = () => {
                         className='text-xl items-center xl:text-8xl sm:text-8xl shadow rounded-xl font-bold mb-0'>
                         Products
                     </motion.div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-20 mt-8">
                         
                         
                         <div>
