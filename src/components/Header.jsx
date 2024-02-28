@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Nav from './Nav';
 import NavMobile from './NavMobile';
 import MenuBtn from './MenuBtn';
-import logo from '../../public/logo6.png';
+import logo from '../../public/logo7.png';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 
@@ -38,9 +38,9 @@ const Header = () => {
                 : 'bg-transparent py-8 transition-all'
             }`}
         >
-            <div className="container sm:mx-10 xl:mx-40 flex flex-col xl:flex-row items-center">
+            <div className="container sm:mx-10 xl:mx-10 md:mx-20 lg:mx-30  flex flex-col xl:flex-row items-center">
                 <Link href='/' legacyBehavior>
-                    <a className="cursor-pointer absolute top-0">
+                    <a className="cursor-pointer absolute top-14">
                         <motion.div
                             animate={{ width: logoSize, height: logoSize }} // Animate changes in width and height
                             transition={{ duration: 0.5 }} // Set the duration of the transition
@@ -48,8 +48,8 @@ const Header = () => {
                             <Image
                                 src={logo}
                                 alt="Logo"
-                                width={250} // Initial width of the logo
-                                height={250} // Initial height of the logo
+                                width={150} // Initial width of the logo
+                                height={150} // Initial height of the logo
                                 priority
                             />
                         </motion.div>
