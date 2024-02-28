@@ -87,10 +87,10 @@ const Contacts = () => {
 
                 <div className='container mx-auto flex flex-col justify-center items-center'>
                     {/** Foundation Team */}
-                    <div className='text-black flex flex-col justify-center items-center py-12'>
+                    <div className='text-black flex flex-col justify-center items-center py-30'>
 
-                        <div className="flex justify-center bg-#201F23 items-center">
-                                    <div>
+                        <div className="flex item-center justify-center  bg-#201F23 items-center py-10">
+                                    <div className="w-1/2  justify-center  ">
 
                                         
                                         <div className="flex items-center">
@@ -105,12 +105,9 @@ const Contacts = () => {
                                         </div>
                                     </div>
 
-                            <motion.div
-                                className='bg-black-100 p-8 rounded-2xl'
-                            >
 
 
-                                <div className=" text-xl xl:text-2xl  mb-0 flex flex-col lg:flex-row gap-80">
+                                <div className=" w-1/2 text-center  text-xl xl:text-2xl  mb-8 flex flex-col lg:flex-row gap-80">
                                     <form
                                         ref={formRef}
                                         onSubmit={handleSubmit}
@@ -158,7 +155,6 @@ const Contacts = () => {
                                         </button>
                                     </form>
                                 </div>
-                            </motion.div>
                         </div>
 
                     </div>

@@ -189,7 +189,7 @@ body{
   max-width: 300px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
+  margin-bottom: 500px;
   text-align: center;
   position: relative;
 }
@@ -199,10 +199,10 @@ body{
   height: 70px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 25px;
+  font-size: 18px;
   text-align: center;
   background-color: #fdf8f8;
-  border: 2px solid #070707;
+  border: 1px solid #070707;
   border-radius: 50%;
   position: relative;
   transition: background-color 0.25s ease-in;
@@ -224,7 +224,7 @@ body{
 }
 .timeline-block .iconic::after {
   width: 1px;
-  height: 30px;
+  height: 60px;
   margin-bottom: -7px;
   margin-left: -2px;
   content: "";
@@ -234,27 +234,10 @@ body{
   left: 50%;
   bottom: 0;
 }
-.timeline-block:hover .iconic {
-  background-color: #ffffffbb;
-}
-.timeline-block:hover .iconic .fa {
-  color: #fdfdfd;
-}
-.timeline-block .heading {
-  padding-bottom: 10px;
-  position: relative;
-}
-.timeline-block .heading::after {
-  width: 50px;
-  height: 2px;
-  content: "";
-  display: block;
-  background-color: #ffffff;
-  margin-left: auto;
-  margin-right: auto;
-}
+
+/* bitch */
 .timeline-block .text {
-  padding-top: 60px;
+  padding-top: 100px;
   color: white;
   position: relative;
 }
@@ -262,7 +245,7 @@ body{
   width: 15px;
   height: 15px;
   display: block;
-  content: "";
+  /* content: ""; */
   background-color: #f1f1ee;
   border-radius: 50%;
   transform: translateY(50%) translateX(-50%);
@@ -278,7 +261,7 @@ body{
     margin-bottom: 0;
     float: left;
   }
-  .timeline-block::after {
+  /* .timeline-block::after {
     width: 100%;
     height: 1px;
     content: "";
@@ -289,7 +272,7 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-  }
+  } */
   .timeline-block:last-child::after {
     width: calc(50% - 5px);
     left: 5px;
@@ -306,10 +289,11 @@ body{
     bottom: auto;
     top: 0;
   }
+  /* bitch */
   .timeline-block:nth-child(even) .text {
     transform: translateY(-50%);
     padding-top: 0;
-    padding-bottom: 60px;
+    padding-bottom: 150px;
   }
   .timeline-block:nth-child(even) .text::before {
     transform: translateY(-50%) translateX(-50%);
@@ -329,9 +313,9 @@ body{
   overflow-x: scroll; /* Enable horizontal scrolling */
   
   overflow-y: hidden; /* Hide vertical scrolling */
-  top: 80%;
+  top: 70%;
   display: flex;
-  padding: 180px; /* Adjust as needed */
+  padding: 245px; /* Adjust as needed */
   scrollbar-width: thin; /* Set the width of the scrollbar */
   scrollbar-color: rgba(248, 248, 248, 0.5) #201F23; /* Set the color of the scrollbar */
 }
@@ -353,13 +337,16 @@ body{
 
 
 .timeline-block {
-  flex: 0 0 auto;
+  flex: 100 0 auto;
   /* Your timeline block styles */
 }
 
+
+/* Scroll bar buttons */
+
 .scroll-button {
   position: absolute;
-  top: 86.8%;
+  top: 83%;
   transform: translateY(-90%);
   padding: 20px;
   background-color: rgba(248, 248, 248, 0.5);

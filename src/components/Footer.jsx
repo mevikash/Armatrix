@@ -19,13 +19,19 @@ const Footer = () => {
                         className="h-full w-auto px-10"
                     />
             </a>
-        <span className="block text-xl xl:text-1xl text-sm text-white sm:text-center">© 2024 <a href="#" className="hover:underline">Armatrix</a>. All Rights Reserved.</span>
-            <ul className="flex text-xl xl:text-1xl flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0 px-10">
-                <li>
+            <div className="sm:flex sm:items-center sm:justify-between"> 
+            <span className="block px-10 xl:text-xl sm:text-sm text-white sm:text-center">© 2024 <a href="#" className="hover:underline">Armatrix</a>. All Rights Reserved.</span>
+            </div>
+           
+
+            <ul className="sm:flex sm:items-center sm:justify-between">
+            <span className="block px-10 xl:text-xl sm:text-sm text-white sm:text-center">contact@armatrix.in</span>
+                {/* <li>
                     contact@armatrix.in
                 
-                </li>
+                </li> */}
             </ul>
+           
         </div>
         <hr className=" border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-2" />
   <a className="block text-sm text-gray-500 sm:text-center dark:text-gray-400" href="https://github.com/mevikash">meVikash</a>

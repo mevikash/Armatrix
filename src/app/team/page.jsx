@@ -12,21 +12,19 @@ const Hero = () => {
 
             <div style={{ position: 'relative' }}>
 
-                <div className='container mx-auto flex flex-col justify-center items-center'>
+                <div className=' '>
                     {/** Foundation Team */}
                     <div className='text-black flex flex-col justify-center items-center py-12'>
                         <motion.div
-                            // initial='hidden'
-                            // whileInView='show'
                             variants={fadeIn('up', 0.3)}
                             className='text-4xl xl:text-6xl font-bold mb-8'>
                             Team
                         </motion.div>
-                        <div className='flex flex-wrap justify-center  gap-1'>
+                        <div className='flex flex-wrap justify-center  gap-2'>
                             {/** Individual Team Members */}
 
                             <motion.div
-                                className='flex flex-col items-center bg-white py-8 px-5 rounded-3xl border shadow-md md:mr-10 lg:mr-20 mb-8'>
+                                className='flex flex-col items-center bg-white py-8 px-5 rounded-3xl border shadow-md md:mr-12 lg:mr-20 mb-8'>
                                 <Image
                                     src='/assets/hero/v.jpeg'
                                     width={200}
@@ -34,10 +32,10 @@ const Hero = () => {
                                     className='rounded-full border shadow-md'
                                     alt='Team Member Image'
                                 />
-                                <div className='flex flex-col items-center mt-1'>
+                                <div className='flex flex-col items-center mt-4'>
                                     <div className='flex items-center mb-0'>
-                                        <p className='text-gray-700 text-[40px]'>Vishrant Dave</p>
                                     </div>
+                                        <p className='text-gray-700 text-[40px]'>   Vishrant Dave    </p>
                                     <p className='ml-2 text-gray-700 text-[20px]'>Co-Founder & CEO</p>
                                     {/* <p className='font-bold'> Team</p> */}
                                     <p className='text-gray-700 mt-4 flex flex items-center'>
@@ -65,7 +63,7 @@ const Hero = () => {
                             </motion.div>
                             {/* Other team members */}
                             <motion.div
-                                className='flex flex-col items-center bg-white py-8 px-5 rounded-3xl border shadow-md md:mr-10 lg:mr-20 mb-8'>
+                                className='flex flex-col items-center bg-white py-8 px-8 rounded-3xl border shadow-md sm:mr-5 md:mr-10 lg:mr-20 mb-8'>
                                 <Image
                                     src='/assets/hero/a.jpeg'
                                     width={200}
@@ -75,7 +73,7 @@ const Hero = () => {
                                 />
                                 <div className='flex flex-col items-center mt-4'>
                                     <div className='flex items-center mb-2'>
-                                        <p className='text-gray-700 text-[40px]'>Ayush Ranjan</p>
+                                        <p className='text-gray-700 text-[40px]'>    Ayush Ranjan    </p>
 
                                     </div>
                                     <p className='ml-2 text-gray-700'>Co-Founder & CTO</p>
@@ -114,7 +112,7 @@ const Hero = () => {
                                 />
                                 <div className='flex flex-col items-center mt-4'>
                                     <div className='flex items-center mb-2'>
-                                        <p className='text-gray-700 text-[40px]'>Prateesh Awasthi</p>
+                                        <p className='text-gray-700 text-[40px]'> Prateesh Awasthi </p>
 
                                     </div>
                                     <p className='ml-2 text-gray-700'>Co-Founder & Head R&D</p>

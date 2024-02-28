@@ -8,7 +8,7 @@ const Nav = ({ containerStyles, LinkStyles }) => {
     })
     return (
     <nav className={`${containerStyles}`}>
-        <div className=' flex xl:flex absolute justify-between right-20 top-20 text-[00px]'>
+        <div className=' flex xl:flex sm:flex md:flex lg:flex absolute justify-between right-10 top-20 '>
 
             <ul className="hidden my-6 sm:flex">
                   <li className="ml-0 uppercase text-2xl text-white">
