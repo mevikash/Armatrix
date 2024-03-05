@@ -1,3 +1,12 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+
+const MyComponent = ({ icon = faCoffee, size = '1x' }) => {
+  return <FontAwesomeIcon icon={icon} size={size} />;
+};
+
+export default MyComponent;
+
 const styles = {
     paddingX: "sm:px-16 px-6",
     paddingY: "sm:py-16 py-6",

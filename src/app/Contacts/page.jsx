@@ -49,7 +49,7 @@ const Contacts = () => {
             .then(
                 () => {
                     setLoading(false);
-                    alert("Thank you. I will get back to you as soon as possible.");
+                    alert("Thank you for reaching out. We will get back to you as soon as possible.");
 
                     setForm({
                         name: "",
@@ -121,7 +121,7 @@ const Contacts = () => {
                                                 value={form.name}
                                                 onChange={handleChange}
                                                 placeholder=""
-                                                className='bg-tertiary xl:py-4 xl:px-60 sm:py-2 sm:px-0 lg:px-40 lg:py-2 md:px-0 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+                                                className='bg-tertiary xl:py-4 xl:px-48 sm:py-2 sm:px-0 lg:px-32 lg:py-2 md:px-0 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
                                             />
                                         </label>
                                         <label className='flex flex-col'>
@@ -132,7 +132,7 @@ const Contacts = () => {
                                                 value={form.email}
                                                 onChange={handleChange}
                                                 placeholder=""
-                                                className='bg-tertiary  xl:py-4 xl:px-60 sm:py-2 sm:px-0 lg:px-40 lg:py-2 md:px-0 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+                                                className='bg-tertiary  xl:py-4 xl:px-48 sm:py-2 sm:px-0 lg:px-32 lg:py-2 md:px-0 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
                                             />
                                         </label>
                                         <label className='flex flex-col'>
@@ -143,7 +143,7 @@ const Contacts = () => {
                                                 value={form.message}
                                                 onChange={handleChange}
                                                 placeholder=''
-                                                className='bg-tertiary xl:py-4 xl:px-60 sm:py-2 sm:px-0 lg:px-40 lg:py-2 md:px-0 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+                                                className='bg-tertiary xl:py-4 xl:px-8 sm:py-2 sm:px-4 lg:px-4 lg:py-2 md:px-4 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
                                             />
                                         </label>
 

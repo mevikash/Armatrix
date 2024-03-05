@@ -1,11 +1,13 @@
 'use client';
 import "./styles.css";
+import "./style";
 
 import React, { useState } from "react";
 import { motion } from 'framer-motion';
 import { Timeline } from "react-beautiful-horizontal-timeline";
 
-function App() {
+
+function Timelines() {
   const [labelWidth, setLabelWidth] = useState(140);
   const [amountMove, setAmountMove] = useState(150);
   const [lineColor, setLineColor] = useState("#fff");
@@ -13,27 +15,28 @@ function App() {
   const [eventTextAlignCenter, setEventTextAlignCenter] = useState(true);
   const [showSlider, setShowSlider] = useState(true);
   const [arrowsSize, setArrowsSize] = useState(false);
+ 
 
   const myList = [
     {
       date: "July 2019",
-      name: "Three roommates start their journey at IIT Kanpur to pursue their undergraduate degree",
+      name: "Three roommates start their journey at IIT Kanpur to pursue their undergraduate degree"
     },
     {
       date: "March 2023",
-      name: "Decision to start a robotics company is made and ideation stage begins",
+      name: "Decision to start a robotics company is made and ideation stage begins"
     },
     {
       date: "Nov 2023",
-      name: "Received Gradcapital Atomic Fellowship",
+      name: "Received Gradcapital Atomic Fellowship"
     },
     {
       date: "03 Jan 2024",
-      name: "Company Incorporated",
+      name: "Company Incorporated"
     },
     {
       date: "10 Jan 2024",
-      name: "Collaboration with Space Dynamics Lab, IIT Kanpur starts on the TIH Foundation - IIT Bombay funded Project",
+      name: "Collaboration with Space Dynamics Lab, IIT Kanpur starts on the TIH Foundation - IIT Bombay funded Project"
     },
   ];
 
@@ -59,6 +62,7 @@ function App() {
                 whileInView='show'
                 className='xl:text-xl lg:text-lg md:text-base sm:text-sm font-bold mb-0'
               >
+               
                 <Timeline
                   myList={myList}
                   labelWidth={labelWidth}
@@ -68,18 +72,22 @@ function App() {
                   darkMode={darkMode}
                   eventTextAlignCenter={eventTextAlignCenter}
                   showSlider={showSlider}
-                  arrowsSize={arrowsSize}
+                  arrowsSize={'sm'}
                 />
               </motion.div>
             </div>
           </div>
         </div>
+        {/* console.log(props.id) */}
       </section>
     </div>
   );
 }
 
-export default App;
+
+export default Timelines;
+
+
 
 
 // import Image from 'next/image';
