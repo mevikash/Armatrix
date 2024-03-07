@@ -1,42 +1,78 @@
 'use client';
-import Image from 'next/image'
-import {motion} from 'framer-motion';
-import { fadeIn } from '../../variants';
-const Vishrant = () => {
-    return (
-        <section style={{ backgroundImage: "url('/b3.jpg')" }} className="h-[80vh] bg-white  xl:h-[700px] flexCenter flex-col">
-            <motion.div 
-            variants={fadeIn('left', 0.1)}
-            initial='hidden'
-            whileinview={'show'}
-            viewport={{ once: false, amount: 0.7 }} 
-            className="flexCenter max-container relative w-full">
-                <div className="absolute flex bg-white py-8 pl-5 pr-7 gap-20 rounded-3xl border shadow-md md:left-[30%] lg:top-20">
-                    <Image
-                        src="/v1.jpg"
-                        alt="meter"
-                        width={250}
-                        height={450}
-                        className="h-full w-auto"
-                    />
-                    <div className="flexBetween flex-col">
-                        <div className='flex w-full flex-col'>
-                            <div className="flexBetween w-full">
-                                <p className="regular-16 text-gray-20">Yo it's me </p>
-                                <p className="bold-16 text-red-500">Vishrant</p>
-                            </div>
-                            <p className="bold-20 mt-2">Bitch</p>
-                        </div>
+import React, {useEffect, useState} from "react";
+import { Chrono } from "react-chrono";
+import data from "./data";
 
-                        <div className='flex w-full flex-col'>
-                            <p className="regular-16 text-gray-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad voluptates tenetur animi, adipisci ipsam dicta aliquid iste cum reiciendis officia harum quis facere, odit eaque ratione accusamus, vel beatae saepe!</p>
-                            <h4 className="bold-20 mt-2 whitespace-nowrap">Wonorejo Pasuruan</h4>
-                        </div>
-                    </div>
-                </div>
-            </motion.div>
-        </section>
-    );
-};
+function Timelines() {
+    const [Component, setComponent] = useState(null);
 
-export default Vishrant;
+  useEffect(() => {
+    import('react-chrono').then((module) => {
+      setComponent(module);
+    });
+  }, []);
+
+  if (!Component) {
+    return <div>Loading...</div>;
+  }
+  return (
+    <section className="h-[80vh] bg-white  xl:h-[500px] lg:h-[500px] md:h-[500px] sm:h-[500px] flexCenter flex-col" >
+
+    
+      <div style={{ width: "100%", height: "50vh" }}>
+        <Component.Chrono
+          items={data}
+        //   showAllCardsHorizontal
+        // disableAutoScrollOnClick={false}
+        // enableQuickJump={false}
+        // enableLayoutSwitch={false}
+        disableNavOnKey={false}
+        // enableLayoutSwitch={false}
+        // hideControls={false}
+        // flipLayout={true}
+        // lineWidth={10}
+        timelinePointShape='circle'
+        // timelinePointShape='square'
+        // timelinePointShape='diamond'
+//   mode="HORIZONTAL"
+  mode="VERTICAL"
+  buttonTexts={{
+    first: 'Jump to First',
+    last: 'Jump to Last',
+    next: 'Next',
+    previous: 'Previous',
+  }}
+  fontSizes={{
+    cardSubtitle: '0.85rem',
+    cardText: '0.8rem',
+    cardTitle: '1rem',
+    title: '1rem',
+  }}
+//   theme={{
+//     primary: 'red',
+//     secondary: 'blue',
+//     cardBgColor: 'yellow',
+//     titleColor: 'black',
+//     titleColorActive: 'red',
+//   }}
+theme ={ {
+    primary : "#253E66",
+    // secondary : "#EF6555"
+    }}
+slideShowType="reveal"
+          focusActiveItemOnLoad
+          activeItemIndex={0}
+          cardHeight={200}
+          itemWidth={400}
+          slideShow
+          enableDarkToggle={true}
+        //   toolbarPosition={true}
+        //   borderLessCards={false}
+        >
+          
+        </Component.Chrono>
+      </div>
+    </section>
+  );
+}
+export default Timelines;

@@ -19,7 +19,7 @@ function Vikash() {
     <section className='bg-primary h-screen bg-cover bg-no-repeat'>
       <div className="bg-primary video-section">
         <video src="./video.mp4" loop autoPlay></video>
-        <div className="bg-primary video-copy">
+        <div className="bg-primary video-copy ">
           <h1 className={bebas.className}>
             ARMATRIX
             <div className='mevikash min-h-[10px] flex items-center mb-6 lg:text-[60px] sm:text-4xl'>

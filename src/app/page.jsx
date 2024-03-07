@@ -7,7 +7,7 @@ import Newsletter from '../components/Newsletter'
 import Timeline from '../components/Timeline'
 // import Ranjan from '../components/Ranjan'
 import Vikash from '../components/mevikash'
-// import Vishrant from '../components/Vishrant'
+import Vishrant from '../components/Vishrant'
 
 export default function Home() {
   return (
@@ -15,9 +15,9 @@ export default function Home() {
       <Vikash />
       {/* <Hero /> */}
       <Newsletter />
-      <Timeline />
+      {/* <Timeline /> */}
       {/* <Events /> */}
-      {/* <Vishrant /> */}
+      <Vishrant />
       {/* <Prateesh /> */}
       {/* <Ranjan /> */}
       {/* <Animation /> */}

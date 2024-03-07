@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -29,6 +30,8 @@ const config: Config = {
       fontFamily: {
         alexBrush: ['var(--font-alexBrush)', 'sans-serif'],
         montserrat: ['var(--font-monsterrat)', 'sans-serif'],
+        poppins: ['var(--font-Poppins)', 'sans-serif'],
+        // font-family: 'Poppins', sans-serif;
       },
       colors: {
         primary: '#201F23',

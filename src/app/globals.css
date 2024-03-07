@@ -8,6 +8,9 @@
   width: 0px;
 }
 
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
 /* *::-webkit-scrollbar-track {
   background: var(#f9a23a);
   border-radius: 5px;
