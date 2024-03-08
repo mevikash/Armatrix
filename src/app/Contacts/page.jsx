@@ -114,42 +114,43 @@ const Contacts = () => {
                                         className='mt-12 flex flex-col gap-8'
                                     >
                                         <label className='flex flex-col'>
-                                            <span className='text-black font-medium mb-4'>Name</span>
-                                            <input
-                                                type='text'
-                                                name='name'
-                                                value={form.name}
-                                                onChange={handleChange}
-                                                placeholder=""
-                                                className='bg-tertiary xl:py-4 xl:px-48 sm:py-2 sm:px-0 lg:px-32 lg:py-2 md:px-0 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-                                            />
-                                        </label>
-                                        <label className='flex flex-col'>
-                                            <span className='text-black font-medium mb-4'> Email</span>
-                                            <input
-                                                type='email'
-                                                name='email'
-                                                value={form.email}
-                                                onChange={handleChange}
-                                                placeholder=""
-                                                className='bg-tertiary  xl:py-4 xl:px-48 sm:py-2 sm:px-0 lg:px-32 lg:py-2 md:px-0 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-                                            />
-                                        </label>
-                                        <label className='flex flex-col'>
-                                            <span className='text-black font-medium mb-4'>Your Message</span>
-                                            <textarea
-                                                rows={7}
-                                                name='message'
-                                                value={form.message}
-                                                onChange={handleChange}
-                                                placeholder=''
-                                                className='bg-tertiary xl:py-4 xl:px-8 sm:py-2 sm:px-4 lg:px-4 lg:py-2 md:px-4 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-                                            />
-                                        </label>
+    <span className='text-black font-medium mb-4'>Name</span>
+    <input
+        type='text'
+        name='name'
+        value={form.name}
+        onChange={handleChange}
+        placeholder=""
+        className='bg-tertiary xl:py-4 xl:px-48 sm:py-2 sm:px-0 lg:px-32 lg:py-2 md:px-16 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none w-100 border-none font-medium'
+    />
+</label>
+<label className='flex flex-col'>
+    <span className='text-black font-medium mb-4'> Email</span>
+    <input
+        type='email'
+        name='email'
+        value={form.email}
+        onChange={handleChange}
+        placeholder=""
+        className='bg-tertiary xl:py-4 xl:px-48 sm:py-2 sm:px-0 lg:px-32 lg:py-2 md:px-16 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none w-100 border-none font-medium'
+    />
+</label>
+<label className='flex flex-col'>
+    <span className='text-black font-medium mb-4'>Your Message</span>
+    <textarea
+        rows={7}
+        name='message'
+        value={form.message}
+        onChange={handleChange}
+        placeholder=''
+        className='bg-tertiary xl:py-4 xl:px-48 sm:py-2 sm:px-0 lg:px-32 lg:py-2 md:px-16 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none w-100 border-none font-medium'
+    />
+</label>
+
 
                                         <button
                                             type='submit'
-                                            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+                                            className='bg-tertiary xl:py-4 xl:px-8 sm:py-2 sm:px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none w-fit text-white font-bold shadow-md shadow-primary'
                                         >
                                             {loading ? "Sending..." : "Send"}
                                         </button>
