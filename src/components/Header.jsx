@@ -40,7 +40,7 @@ const Header = () => {
         >
             <div className="container sm:mx-10 xl:mx-10 md:mx-20 lg:mx-30  flex flex-col xl:flex-row items-center">
                 <Link href='/' legacyBehavior>
-                    <a className="cursor-pointer absolute top-14">
+                    <a className="cursor-pointer absolute top-14 top-${width < 640 ? '1/2' : '14'} left-${width < 640 ? '1/2' : '1/2'} transform ${width < 640 ? '-translate-x-1/2 -translate-y-1/2' : ''}">
                         <motion.div
                             animate={{ width: logoSize, height: logoSize }} // Animate changes in width and height
                             transition={{ duration: 0.5 }} // Set the duration of the transition
