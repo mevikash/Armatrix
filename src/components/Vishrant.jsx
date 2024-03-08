@@ -18,16 +18,27 @@ function Timelines() {
   return (
 
 
-    <section className="h-[80vh] bg-white  xl:h-[500px] lg:h-[500px] md:h-[500px] sm:h-[500px] flexCenter flex-col" >
+    <section className="h-[80vh] bg-white  xl:h-[800px] lg:h-[800px] md:h-[800px] sm:h-[800px]  bg-newsletter bg-fixed bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center " >
+    {/* <section className="h-[80vh] bg-white  xl:h-[800px] lg:h-[800px] md:h-[800px] sm:h-[800px]   flex flex-col justify-center items-center " > */}
+<div class="bg-black bg-opacity-50" style={{ width: "100%", height: "100vh" }}>
+
+      <div
+        initial='hidden'
+        className='text-xl xl:text-8xl lg:text-6xl md:text-4xl sm:text-2xl  font-alexBrush py-20 font-bold mb-0'
+        style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
+        TimeLine
+      </div>
 
 
       <div style={{ width: "100%", height: "50vh" }}>
         <Component.Chrono
+        
           items={data}
+          // enableOutline 
           hideControls={false}
-                allowDynamicUpdate
-                // textDensity='HIGH'
-                useReadMore={false}
+          allowDynamicUpdate
+          // textDensity='HIGH'
+          useReadMore={false}
           //   showAllCardsHorizontal
           // enableChangeDesity={false}
           enableQuickJump={false}
@@ -40,7 +51,7 @@ function Timelines() {
           // timelinePointShape='circle'
           // timelinePointShape='square'
           // timelinePointShape='diamond'
-          //   mode="HORIZONTAL"
+            // mode="HORIZONTAL"
           mode="VERTICAL"
           buttonTexts={{
             first: 'Jump to First',
@@ -54,16 +65,14 @@ function Timelines() {
             cardTitle: '1rem',
             title: '1rem',
           }}
-          //   theme={{
-          //     primary: 'red',
-          //     secondary: 'blue',
-          //     cardBgColor: 'yellow',
-          //     titleColor: 'black',
-          //     titleColorActive: 'red',
-          //   }}
           theme={{
             primary: "#253E66",
-            // secondary : "#EF6555"
+            // primary: 'red',
+            secondary: 'blue-200',
+            cardBgColor: '#e2e8f0',
+            titleColor: 'black',
+            cardTitleColor: '#84cc16',
+            titleColorActive: 'white',
           }}
           // slideShowType="reveal"
           focusActiveItemOnLoad
@@ -72,12 +81,13 @@ function Timelines() {
           itemWidth={400}
           // slideShow
           enableDarkToggle={false}
-        //   toolbarPosition={true}
-        //   borderLessCards={false}
-        >
+          //   toolbarPosition={true}
+          //   borderLessCards={false}
+          >
 
         </Component.Chrono>
       </div>
+          </div>
     </section>
   );
 }

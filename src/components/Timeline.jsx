@@ -1,6 +1,6 @@
 'use client';
 import "./styles.css";
-import "./style";
+// import "./style";
 
 import React, { useState } from "react";
 import { motion } from 'framer-motion';

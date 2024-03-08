@@ -6,19 +6,7 @@ const items = [
         "Three Men on the Boat",
       cardDetailedText: `Three roommates start their journey at IIT Kanpur to pursue their undergraduate degree`
     },
-    // {
-    //     title: "May 1940",
-    //     cardTitle: "Dunkirk",
-    //     url: "http://www.history.com",
-    //     cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
-    //     cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
-    //     media: {
-    //       type: "IMAGE",
-    //       source: {
-    //         url: "http://someurl/image.jpg"
-    //       }
-    //     }
-    //   },
+    
     {
       title: "March 2023",
       cardTitle: "Idea",
@@ -43,6 +31,41 @@ const items = [
       cardSubtitle: `Collaboration`,
       cardDetailedText: ` Collaboration with Space Dynamics Lab, IIT Kanpur starts on the TIH Foundation - IIT Bombay funded Project`
     },
+    // {
+    //   title: "May 1940",
+    //   cardTitle: "Dunkirk",
+    //   url: "http://www.history.com",
+    //   cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
+    //   cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
+    //   media: {
+    //     type: "IMAGE",
+    //     source: {
+    //       url: "https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/2/2015/09/swamp-people-s15-2048x1152-priority-feature-16x9-1.jpg?w=1800"
+    //     }
+    //   }
+    // },
+    // {
+    //   title: 'First item',
+    //   media: {
+    //     type: 'IMAGE',
+    //     source: {
+    //       url: 'https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/2/2015/09/swamp-people-s15-2048x1152-priority-feature-16x9-1.jpg?w=1800',
+    //     },
+    //   },
+    //   text: 'This is the caption for the first item.',
+    // },
+    // {
+    //   title: "7 December 1941",
+    //   cardTitle: "Pearl Harbor",
+    //   media: {
+    //     source: {
+    //       url: "https://www.youtube.com/embed/f6cz9gtMTeI",
+    //       type: "mp4"
+    //     },
+    //     type: "VIDEO",
+    //     name: "Pearl Harbor"
+    //   }
+    // },
     
   ];
   
