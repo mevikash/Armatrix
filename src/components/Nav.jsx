@@ -23,7 +23,7 @@ const Nav = ({ containerStyles, LinkStyles }) => {
 
     return (
         <nav className={`${containerStyles}`}>
-            <div className='flex xl:flex sm:flex md:flex lg:flex absolute justify-between right-10 top-14'>
+            <div className='flex xl:flex sm:flex md:flex lg:flex absolute justify-between right-20 top-14'>
                 <ul className={`my-6 sm:flex transition-all duration-300 ${scrollPosition > 100 ? 'text-lg' : 'text-2xl'}`}>
                     <li className="ml-0 uppercase text-white font-poppins">
                         <Link href="/">

@@ -13,7 +13,8 @@ const NavMobile = () => {
             <div
             onClick={() => setIsOpen(false)}
             className=' text-white xl:text-1xl md:text-1md sm:text-1sm lg:text-1lg  cursor-pointer'>
-                <RiCloseLine className='text-6xl group flex flex-col gap-y-10 cursor-pointer xl:hidden group' />
+                {/* <RiCloseLine className='text-6xl group flex flex-col gap-y-10 cursor-pointer xl:hidden group' /> */}
+                <RiCloseLine className='text-6xl group flex flex-col gap-y-10 cursor-pointer xl:hidden group p-10' />
                 <Nav />
                 </div>
         </nav>
