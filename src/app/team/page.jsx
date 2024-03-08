@@ -19,10 +19,10 @@ const Hero = () => {
             </div>
             <div className='text-black flex flex-col justify-center items-center' >
 
-                <div className='flex flex-wrap justify-center  gap-2 ' >
+                <div className='flex flex-wrap justify-center  gap-10 ' >
 
                     <motion.div
-                        className='flex flex-col items-center bg-white py-8 px-5 rounded-3xl border shadow-md md:mr-12 lg:mr-20 mb-8'>
+                        className='flex flex-col items-center bg-white py-8 px-5 rounded-3xl border shadow-md  mb-8'>
                         <Image
                             src='/assets/hero/v.jpeg'
                             width={200}
@@ -59,7 +59,7 @@ const Hero = () => {
                         </div>
                     </motion.div>
                     <motion.div
-                        className='flex flex-col items-center bg-white py-8 px-10 rounded-3xl border shadow-md sm:mr-5 md:mr-10 lg:mr-20 mb-8'>
+                        className='flex flex-col items-center bg-white py-8 px-10 rounded-3xl border shadow-md mb-8'>
                         <Image
                             src='/assets/hero/a.jpeg'
                             width={200}
@@ -135,17 +135,15 @@ const Hero = () => {
                 </div>
             </div>
 
-
+            <div
+                initial='hidden'
+                className='text-xl xl:text-6xl lg:text-4xl md:text-4xl sm:text-4xl  font-alexBrush py-20 font-bold mb-0'
+                style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
+                Collaborators
+            </div>
             
             <div className='text-black flex flex-col justify-center items-center py-0'>
-                <motion.div
-                    // initial='hidden'
-                    // whileInView='show'
-                    variants={fadeIn('up', 0.3)}
-                    className='text-4xl xl:text-6xl font-bold mb-8'
-                    style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
-                    Collaborators
-                </motion.div>
+                
                 <div className='flex flex-wrap justify-center items-center gap-0'>
                     {/* Include collaborator images */}
                     <motion.div
