@@ -22,7 +22,7 @@ function Vikash() {
         <div className="bg-primary video-copy ">
           <h1 className={bebas.className}>
             ARMATRIX
-            <div className='mevikash min-h-[10px] flex items-center mb-6 lg:text-[60px] sm:text-4xl'>
+            <div className='mevikash min-h-[10px] flex items-center mb-6 lg:text-[60px] md:text-2md lg:text-2xl sm:text-xl'>
               <TypeAnimation sequence={locations} speed={10} deletionSpeed={10} repeat={Infinity} cursor={false} style={{ color: 'white' }} />
             </div>
           </h1>

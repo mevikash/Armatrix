@@ -54,7 +54,7 @@ const Newsletter = () => {
                                 </div>
                                 <div className="flex flex-col">
                                     <p className="regular-16 text-gray-20 mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad voluptates tenetur animi, adipisci ipsam dicta aliquid iste cum reiciendis officia harum quis facere, odit eaque ratione accusamus, vel beatae saepe!</p>
-                                    <h4 className="bold-20 whitespace-nowrap">Wonorejo Pasuruan</h4>
+                                    
                                 </div>
                             </div>
 
@@ -91,7 +91,7 @@ const Newsletter = () => {
                                 </div>
                                 <div className="flex flex-col">
                                     <p className="regular-16 text-gray-20 mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad voluptates tenetur animi, adipisci ipsam dicta aliquid iste cum reiciendis officia harum quis facere, odit eaque ratione accusamus, vel beatae saepe!</p>
-                                    <h4 className="bold-20 whitespace-nowrap">Wonorejo Pasuruan</h4>
+                                    
                                 </div>
                             </div>
 

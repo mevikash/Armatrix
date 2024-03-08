@@ -10,13 +10,13 @@ const Footer = () => {
 
     <div className="w-full  mx-auto p-0 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
-            <a href="#" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+            <a href="#" className="block px-10 xl:text-xl sm:text-sm text-white font-alexBrush sm:text-center">
                 <Image
                         src="/3.png"
                         alt="meter"
                         width={130}
                         height={120}
-                        className="h-full w-auto px-10"
+                        className="h-full w-auto "
                     />
             </a>
             <div className="sm:flex sm:items-center sm:justify-between"> 

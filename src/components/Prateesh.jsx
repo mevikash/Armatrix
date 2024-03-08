@@ -29,7 +29,7 @@ const Prateesh = () => {
                         </div>
 
                         <div className='flex w-full flex-col'>
-                            <p className="regular-16 text-gray-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad voluptates tenetur animi, adipisci ipsam dicta aliquid iste cum reiciendis officia harum quis facere, odit eaque ratione accusamus, vel beatae saepe!</p>
+                            <p className="regular-16 text-gray-20">Lorem ipsum dolor sit, amet consectetur adipisci ipsam dicta aliquid iste cum reiciendis officia harum quis facere, odit eaque ratione accusamus, vel beatae saepe!</p>
                             <h4 className="bold-20 mt-2 whitespace-nowrap">Wonorejo Pasuruan</h4>
                         </div>
                     </div>

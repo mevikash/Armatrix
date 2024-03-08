@@ -94,14 +94,14 @@ const Contacts = () => {
 
                                         
                                         <div className="flex items-center">
-                                            <TfiLocationPin className="xl:text-8xl md:text-8md sm:text-8xl mr-2" /> {/* Adjust the icon size */}
-                                            <p className="xl:text-3xl lg:text-2xl md:text-2xl  sm:text-xl">112/216, Swaroop Nagar, Kanpur, Uttar Pradesh - 208016, India</p>
+                                            <TfiLocationPin className="xl:text-8xl  lg:text-6xl md:text-4md sm:text-6xl mr-2" /> {/* Adjust the icon size */}
+                                            <p className="xl:text-3xl lg:text-2xl md:text-2md  sm:text-sm">112/216, Swaroop Nagar, Kanpur, Uttar Pradesh - 208016, India</p>
                                         </div>
                                         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
 
                                         <div className="flex items-center">
-                                            <TfiEmail className="xl:text-6xl md:text-6md sm:text-6xl mr-2" /> {/* Adjust the icon size */}
-                                            <p className="xl:text-3xl lg:text-2xl md:text-2xl  sm:text-xl">contact@armatrix.in</p>
+                                            <TfiEmail className="xl:text-6xl  lg:text-4xl md:text-3md sm:text-xl mr-2" /> {/* Adjust the icon size */}
+                                            <p className="xl:text-3xl lg:text-2xl md:text-2sm  sm:text-sm">contact@armatrix.in</p>
                                         </div>
                                     </div>
 
