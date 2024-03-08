@@ -4,7 +4,6 @@
 import Newsletter from '../components/Newsletter'
 // import Animation from '../components/Animation'
 // import Prateesh from '../components/Prateesh'
-import Timeline from '../components/Timeline'
 // import Ranjan from '../components/Ranjan'
 import Vikash from '../components/mevikash'
 import Vishrant from '../components/Vishrant'
