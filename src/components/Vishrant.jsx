@@ -18,9 +18,9 @@ function Timelines() {
   return (
 
 
-    <section className="h-[80vh] bg-white  xl:h-[800px] lg:h-[800px] md:h-[800px] sm:h-[800px]  bg-newsletter bg-fixed bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center " >
+    <section className="h-[80vh] bg-white  xl:h-[800px] lg:h-[800px] md:h-[1200px] sm:h-[800px]  bg-newsletter bg-fixed bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center " >
     {/* <section className="h-[80vh] bg-white  xl:h-[800px] lg:h-[800px] md:h-[800px] sm:h-[800px]   flex flex-col justify-center items-center " > */}
-<div class="bg-black bg-opacity-50" style={{ width: "100%", height: "100vh" }}>
+<div className="bg-black bg-opacity-50" style={{ width: "100%", height: "100vh" }}>
 
       <div
         initial='hidden'
