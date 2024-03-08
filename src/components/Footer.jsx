@@ -20,12 +20,12 @@ const Footer = () => {
                     />
             </a>
             <div className="sm:flex sm:items-center sm:justify-between"> 
-            <span className="block px-10 xl:text-xl sm:text-sm text-white font-alexBrush sm:text-center">© 2024 <a href="#" className="font-alexBrush hover:underline">Armatrix</a>. All Rights Reserved.</span>
+            <span className="block xl:text-xl lg:text-lg md:text-md sm:text-sm text-white font-alexBrush sm:text-center">© 2024 <a href="#" className="font-alexBrush hover:underline">Armatrix</a>. All Rights Reserved.</span>
             </div>
            
 
             <ul className="sm:flex sm:items-center sm:justify-between">
-            <span className="block px-10 xl:text-xl sm:text-sm text-white sm:text-center font-alexBrush">contact@armatrix.in</span>
+            <span className="block px-2 xl:text-xl lg:text-lg md:text-md sm:text-sm text-white  font-alexBrush">contact@armatrix.in</span>
                 {/* <li>
                     contact@armatrix.in
                 
@@ -34,7 +34,7 @@ const Footer = () => {
            
         </div>
         <hr className=" border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-2" />
-  <a className="block  text-gray-500 sm:text-center dark:text-gray-400 font-alexBrush" href="https://github.com/mevikash">meVikash</a>
+  <a className="block px-2 text-gray-500 sm:text-center dark:text-gray-400 font-alexBrush" href="https://github.com/mevikash">meVikash</a>
     </div>
 
           
