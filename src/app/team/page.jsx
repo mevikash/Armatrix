@@ -5,7 +5,7 @@ import { fadeIn } from '../../../variants';
 const Hero = () => {
 
     return (
-        <section className=" bg-white  xl:h-[1400px] lg:h-[2000px] sm:h-[2700px] md:h-[2500px]">
+        <section className=" bg-white  xl:h-[1400px] lg:h-[2000px] sm:h-[2900px] md:h-[2500px]">
             <div style={{ backgroundColor: '#201F23', height: '200px' }}>
                 {/* Content goes here */}
             </div>
