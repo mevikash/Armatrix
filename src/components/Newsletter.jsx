@@ -47,16 +47,16 @@ const Newsletter = () => {
                             <div className="card bg-white p-4 rounded-lg shadow-md" style={{ maxWidth: '550px', maxHeight: '700px' }}>
                                 <div className="flex flex-col">
                                     <div className="flex justify-between items-center mb-2">
-                                        <p className="regular-16 text-gray-20">Yo it's me</p>
-                                        <p className="bold-16 text-red-500">Ranjan 1</p>
+                                        <p style={{ fontSize: '1rem' }} className="regular text-gray-700">Yo it's me</p>
+                                        <p style={{ fontSize: '1rem' }} className="bold text-red-500">Ranjan 1</p>
                                     </div>
-                                    <p className="bold-20 mb-2">Bitch</p>
+                                    <p style={{ fontSize: '1.25rem' }} className="bold mb-2">Bitch</p>
                                 </div>
                                 <div className="flex flex-col">
-                                    <p className="regular-16 text-gray-20 mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad voluptates tenetur animi, adipisci ipsam dicta aliquid iste cum reiciendis officia harum quis facere, odit eaque ratione accusamus, vel beatae saepe!</p>
-                                    
+                                    <p style={{ fontSize: '1rem' }} className="regular text-gray-700 mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad voluptates tenetur animi, adipisci ipsam dicta aliquid iste cum reiciendis officia harum quis facere, odit eaque ratione accusamus, vel beatae saepe!</p>
                                 </div>
                             </div>
+
 
                         </div>
                         <div>
@@ -84,19 +84,19 @@ const Newsletter = () => {
                             <div className="card bg-white p-4 rounded-lg shadow-md" style={{ maxWidth: '550px', maxHeight: '700px' }}>
                                 <div className="flex flex-col">
                                     <div className="flex justify-between items-center mb-2">
-                                        <p className="regular-16 text-gray-20">Yo it's me</p>
-                                        <p className="bold-16 text-red-500">Ranjan 1</p>
+                                        <p style={{ fontSize: '1rem' }} className="regular text-gray-700">Yo it's me</p>
+                                        <p style={{ fontSize: '1rem' }} className="bold text-red-500">Ranjan 1</p>
                                     </div>
-                                    <p className="bold-20 mb-2">Bitch</p>
+                                    <p style={{ fontSize: '1.25rem' }} className="bold mb-2">Bitch</p>
                                 </div>
                                 <div className="flex flex-col">
-                                    <p className="regular-16 text-gray-20 mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad voluptates tenetur animi, adipisci ipsam dicta aliquid iste cum reiciendis officia harum quis facere, odit eaque ratione accusamus, vel beatae saepe!</p>
-                                    
+                                    <p style={{ fontSize: '1rem' }} className="regular text-gray-700 mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad voluptates tenetur animi, adipisci ipsam dicta aliquid iste cum reiciendis officia harum quis facere, odit eaque ratione accusamus, vel beatae saepe!</p>
                                 </div>
                             </div>
 
+
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
