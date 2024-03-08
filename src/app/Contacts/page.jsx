@@ -90,72 +90,70 @@ const Contacts = () => {
                     <div className='text-black flex flex-col justify-center items-center py-30'>
 
                         <div className="flex item-center justify-center  bg-#201F23 items-center py-10">
-                                    <div className="w-1/2  justify-center  ">
-
-                                        
-                                        <div className="flex items-center">
-                                            <TfiLocationPin className="xl:text-8xl  lg:text-6xl md:text-4md sm:text-6xl mr-2" /> {/* Adjust the icon size */}
-                                            <p className="xl:text-3xl lg:text-2xl md:text-2md  sm:text-sm">112/216, Swaroop Nagar, Kanpur, Uttar Pradesh - 208016, India</p>
-                                        </div>
-                                        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-
-                                        <div className="flex items-center">
-                                            <TfiEmail className="xl:text-6xl  lg:text-4xl md:text-3md sm:text-xl mr-2" /> {/* Adjust the icon size */}
-                                            <p className="xl:text-3xl lg:text-2xl md:text-2sm  sm:text-sm">contact@armatrix.in</p>
-                                        </div>
-                                    </div>
-
-
-
-                                <div className=" w-1/2 text-center  text-xl xl:text-2xl  mb-8 flex flex-col lg:flex-row gap-80">
-                                    <form
-                                        ref={formRef}
-                                        onSubmit={handleSubmit}
-                                        className='mt-12 flex flex-col gap-8'
-                                    >
-                                        <label className='flex flex-col'>
-    <span className='text-black font-medium mb-4'>Name</span>
-    <input
-        type='text'
-        name='name'
-        value={form.name}
-        onChange={handleChange}
-        placeholder=""
-        className='bg-tertiary xl:py-4 xl:px-48 sm:py-2 sm:px-0 lg:px-32 lg:py-2 md:px-16 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none w-100 border-none font-medium'
-    />
-</label>
-<label className='flex flex-col'>
-    <span className='text-black font-medium mb-4'> Email</span>
-    <input
-        type='email'
-        name='email'
-        value={form.email}
-        onChange={handleChange}
-        placeholder=""
-        className='bg-tertiary xl:py-4 xl:px-48 sm:py-2 sm:px-0 lg:px-32 lg:py-2 md:px-16 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none w-100 border-none font-medium'
-    />
-</label>
-<label className='flex flex-col'>
-    <span className='text-black font-medium mb-4'>Your Message</span>
-    <textarea
-        rows={7}
-        name='message'
-        value={form.message}
-        onChange={handleChange}
-        placeholder=''
-        className='bg-tertiary xl:py-4 xl:px-48 sm:py-2 sm:px-0 lg:px-32 lg:py-2 md:px-16 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none w-100 border-none font-medium'
-    />
-</label>
-
-
-                                        <button
-                                            type='submit'
-                                            className='bg-tertiary xl:py-4 xl:px-8 sm:py-2 sm:px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none w-fit text-white font-bold shadow-md shadow-primary'
-                                        >
-                                            {loading ? "Sending..." : "Send"}
-                                        </button>
-                                    </form>
+                            <div className="w-1/2 justify-center mx-4">
+                                <div className="flex items-center">
+                                    <TfiLocationPin className="xl:text-6xl lg:text-6xl md:text-4xl sm:text-6xl mr-2" /> {/* Adjust the icon size */}
+                                    <p className="xl:text-xl lg:text-lg md:text-base sm:text-sm">112/216, Swaroop Nagar, Kanpur, Uttar Pradesh - 208016, India</p>
                                 </div>
+                                <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+
+                                <div className="flex items-center">
+                                    <TfiEmail className="xl:text-6xl lg:text-4xl md:text-3xl sm:text-xl mr-2" /> {/* Adjust the icon size */}
+                                    <p className="xl:text-xl lg:text-lg md:text-base sm:text-sm">contact@armatrix.in</p>
+                                </div>
+                            </div>
+
+
+
+                            <div className=" w-1/2 text-center  text-xl xl:text-2xl  mb-8 flex flex-col lg:flex-row gap-80">
+                                <form
+                                    ref={formRef}
+                                    onSubmit={handleSubmit}
+                                    className='mt-12 flex flex-col gap-8'
+                                >
+                                    <label className='flex flex-col'>
+                                        <span className='text-black font-medium mb-4'>Name</span>
+                                        <input
+                                            type='text'
+                                            name='name'
+                                            value={form.name}
+                                            onChange={handleChange}
+                                            placeholder=""
+                                            className='bg-tertiary xl:py-4 xl:px-48 sm:py-2 sm:px-0 lg:px-32 lg:py-2 md:px-16 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none w-100 border-none font-medium'
+                                        />
+                                    </label>
+                                    <label className='flex flex-col'>
+                                        <span className='text-black font-medium mb-4'> Email</span>
+                                        <input
+                                            type='email'
+                                            name='email'
+                                            value={form.email}
+                                            onChange={handleChange}
+                                            placeholder=""
+                                            className='bg-tertiary xl:py-4 xl:px-48 sm:py-2 sm:px-0 lg:px-32 lg:py-2 md:px-16 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none w-100 border-none font-medium'
+                                        />
+                                    </label>
+                                    <label className='flex flex-col'>
+                                        <span className='text-black font-medium mb-4'>Your Message</span>
+                                        <textarea
+                                            rows={7}
+                                            name='message'
+                                            value={form.message}
+                                            onChange={handleChange}
+                                            placeholder=''
+                                            className='bg-tertiary xl:py-4 xl:px-48 sm:py-2 sm:px-0 lg:px-32 lg:py-2 md:px-16 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none w-100 border-none font-medium'
+                                        />
+                                    </label>
+
+
+                                    <button
+                                        type='submit'
+                                        className='bg-tertiary xl:py-4 xl:px-8 sm:py-2 sm:px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none w-fit text-white font-bold shadow-md shadow-primary'
+                                    >
+                                        {loading ? "Sending..." : "Send"}
+                                    </button>
+                                </form>
+                            </div>
                         </div>
 
                     </div>

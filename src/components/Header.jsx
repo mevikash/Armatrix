@@ -57,7 +57,7 @@ const Header = () => {
                 </Link>
                 <Nav containerStyles='hidden  xl:flex items-center gap-x-40' />
                 <NavMobile />
-                <div className="absolute right-7 top-9 z-10 xl:hidden">
+                <div className="absolute right-6 top-9 z-10 xl:hidden">
                     <MenuBtn />
                 </div>
             </div>
