@@ -69,7 +69,7 @@ const Hero = () => {
                         />
                         <div className='flex flex-col items-center mt-4'>
                             <div className='flex items-center mb-2'>
-                                <p className='text-gray-700 text-[40px]'>   Ayush Ranjan  </p>
+                                <p className='text-gray-700 text-[40px]'>Ayush Ranjan</p>
 
                             </div>
                             <p className='ml-2 text-gray-700'>Co-Founder & CTO</p>
@@ -106,7 +106,7 @@ const Hero = () => {
                         />
                         <div className='flex flex-col items-center mt-4'>
                             <div className='flex items-center mb-2'>
-                                <p className='text-gray-700 text-[40px]'> Prateesh Awasthi</p>
+                                <p className='text-gray-700 text-[40px]'>Prateesh Awasthi</p>
 
                             </div>
                             <p className='ml-2 text-gray-700'>Co-Founder & Head R&D</p>
