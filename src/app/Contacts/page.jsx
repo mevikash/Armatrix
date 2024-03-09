@@ -119,7 +119,7 @@ const Contacts = () => {
                                             value={form.name}
                                             onChange={handleChange}
                                             placeholder=""
-                                            style={{ width: "100%", height: "70%" }}
+                                            style={{ width: "95%", height: "70%" }}
                                             className='bg-tertiary xl:py-4 xl:px-48 sm:py-2 sm:px-24 lg:px-32 lg:py-2 md:px-16 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none w-100 border-none font-medium'
                                         />
                                     </label>
@@ -130,7 +130,7 @@ const Contacts = () => {
                                             name='email'
                                             value={form.email}
                                             onChange={handleChange}
-                                            style={{ width: "100%", height: "70%" }}
+                                            style={{ width: "95%", height: "70%" }}
                                             placeholder=""
                                             className='bg-tertiary xl:py-4 xl:px-48 sm:py-2 sm:px-24 lg:px-32 lg:py-2 md:px-16 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none w-100 border-none font-medium'
                                         />
@@ -142,7 +142,7 @@ const Contacts = () => {
                                             name='message'
                                             value={form.message}
                                             onChange={handleChange}
-                                            style={{ width: "100%", height: "70%" }}
+                                            style={{ width: "95%", height: "70%" }}
                                             placeholder=''
                                             className='bg-tertiary xl:py-4 xl:px-48 sm:py-2 sm:px-24 lg:px-32 lg:py-2 md:px-16 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none w-100 border-none font-medium'
                                         />
