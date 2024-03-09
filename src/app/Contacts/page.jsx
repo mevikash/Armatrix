@@ -70,7 +70,7 @@ const Contacts = () => {
     return (
 
 
-        <section className=" bg-white xl:h-[1200px] lg:h-[1200px] sm:h-[1200px] md:h-[1200px]">
+        <section  style={{ width: "100%", height: "100%" }} className=" bg-white xl:h-[1200px] lg:h-[1200px] sm:h-[1200px] md:h-[1200px]">
 
             <div style={{ backgroundColor: '#201F23', height: '200px' }}>
                 {/* Content goes here */}
