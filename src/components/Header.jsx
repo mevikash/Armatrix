@@ -44,6 +44,7 @@ const Header = () => {
                         <motion.div
                             animate={{ width: logoSize, height: logoSize }} // Animate changes in width and height
                             transition={{ duration: 0.5 }} // Set the duration of the transition
+                           
                         >
                             <Image
                                 src={logo}
