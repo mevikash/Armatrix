@@ -25,7 +25,7 @@ const Footer = () => {
            
 
             <ul className="sm:flex sm:items-center sm:justify-between">
-            <span className="block px-2 xl:text-xl lg:text-lg md:text-md sm:text-sm text-white  font-alexBrush">contact@armatrix.in</span>
+            <span style={{ width: "100%", height: "70%" }} className="block px-2 xl:text-xl lg:text-lg md:text-md sm:text-sm text-white  font-alexBrush">contact@armatrix.in</span>
                 {/* <li>
                     contact@armatrix.in
                 

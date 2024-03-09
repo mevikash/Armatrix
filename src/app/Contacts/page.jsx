@@ -112,37 +112,37 @@ const Contacts = () => {
                                     className='mt-12 flex flex-col gap-8'
                                 >
                                     <label className='flex flex-col'>
-                                        <span className='text-black font-medium mb-4'>Name</span>
+                                        <span style={{ width: "90%", height: "100%" }} className='text-black font-medium mb-4'>Name</span>
                                         <input
                                             type='text'
                                             name='name'
                                             value={form.name}
                                             onChange={handleChange}
                                             placeholder=""
-                                            style={{ width: "95%", height: "70%" }}
+                                            style={{ width: "90%", height: "70%" }}
                                             className='bg-tertiary xl:py-4 xl:px-48 sm:py-2 sm:px-24 lg:px-32 lg:py-2 md:px-16 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none w-100 border-none font-medium'
                                         />
                                     </label>
                                     <label className='flex flex-col'>
-                                        <span className='text-black font-medium mb-4'> Email</span>
+                                        <span style={{ width: "90%", height: "100%" }} className='text-black font-medium mb-4'> Email</span>
                                         <input
                                             type='email'
                                             name='email'
                                             value={form.email}
                                             onChange={handleChange}
-                                            style={{ width: "95%", height: "70%" }}
+                                            style={{ width: "90%", height: "70%" }}
                                             placeholder=""
                                             className='bg-tertiary xl:py-4 xl:px-48 sm:py-2 sm:px-24 lg:px-32 lg:py-2 md:px-16 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none w-100 border-none font-medium'
                                         />
                                     </label>
                                     <label className='flex flex-col'>
-                                        <span className='text-black font-medium mb-4'>Your Message</span>
+                                        <span style={{ width: "90%" }} className='text-black font-medium mb-4'>Your Message</span>
                                         <textarea
                                             rows={7}
                                             name='message'
                                             value={form.message}
                                             onChange={handleChange}
-                                            style={{ width: "95%", height: "70%" }}
+                                            style={{ width: "90%", height: "70%" }}
                                             placeholder=''
                                             className='bg-tertiary xl:py-4 xl:px-48 sm:py-2 sm:px-24 lg:px-32 lg:py-2 md:px-16 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none w-100 border-none font-medium'
                                         />
