@@ -55,9 +55,9 @@ const Header = () => {
                         </motion.div>
                     </a>
                 </Link>
-                <Nav containerStyles='hidden  xl:flex items-center gap-x-40' />
+                <Nav containerStyles='hidden  xl:flex md:flex lg:flex items-center gap-x-40' />
                 <NavMobile />
-                <div className="absolute right-6 top-9 z-10 xl:hidden">
+                <div className="absolute right-6 top-9 xl:hidden md:hidden lg:hidden">
                     <MenuBtn />
                 </div>
             </div>
