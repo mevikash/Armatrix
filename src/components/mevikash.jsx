@@ -16,9 +16,9 @@ const locations = [
 
 function Vikash() {
   return (
-    <section className='bg-primary h-screen bg-cover bg-no-repeat'>
+    <section  style={{ width: "100%", height: "100%" }} className='bg-primary h-screen bg-cover bg-no-repeat'>
       <div className="bg-primary video-section">
-        <video src="./video.mp4" loop autoPlay></video>
+        <video src="./video.mp4" loop autoPlay playsInline></video>
         <div className="bg-primary video-copy ">
           <h1 className={bebas.className}>
             ARMATRIX

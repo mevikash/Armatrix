@@ -9,7 +9,7 @@ import { fadeIn } from '../../variants';
 
 const Newsletter = () => {
     return (
-        <section className='bg-newsletter bg-fixed bg-cover bg-center bg-no-repeat'>
+        <section style={{ width: "100%", height: "100%" }} className='bg-newsletter bg-fixed bg-cover bg-center bg-no-repeat'>
             <div className='max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8'>
                 <div className='flex text-black flex-wrap justify-center items-center gap-0 py-20'>
                     <SectionHeader text="Products" />
