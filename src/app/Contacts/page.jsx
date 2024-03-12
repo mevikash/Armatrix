@@ -95,7 +95,8 @@ const Contacts = () => {
                                     <TfiLocationPin className="xl:text-6xl lg:text-6xl md:text-4xl sm:text-6xl mr-2" /> {/* Adjust the icon size */}
                                     <p style={{ width: "100%", height: "70%" }} className="xl:text-xl lg:text-lg md:text-base sm:text-sm">112/216, Swaroop Nagar, Kanpur, Uttar Pradesh - 208016, India</p>
                                 </div>
-                                <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                                <hr  style={{ marginRight: '40px' }} className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+
 
                                 <div className="flex items-center">
                                     <TfiEmail className="xl:text-6xl lg:text-4xl md:text-3xl sm:text-xl mr-2" /> {/* Adjust the icon size */}
@@ -144,7 +145,7 @@ const Contacts = () => {
                                             onChange={handleChange}
                                             style={{ width: "90%", height: "70%" }}
                                             placeholder=''
-                                            className='bg-tertiary xl:py-4 xl:px-48 sm:py-2 sm:px-24 lg:px-32 lg:py-2 md:px-16 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none w-100 border-none font-medium'
+                                            className='bg-tertiary xl:py-4 xl:px-8 sm:py-2 sm:px-24 lg:px-3 lg:py-2 md:px-16 md:py-2 placeholder:text-secondary text-white rounded-lg outline-none w-100 border-none font-medium'
                                         />
                                     </label>
 

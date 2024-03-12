@@ -10,7 +10,7 @@ const Footer = () => {
 
     <div className="w-full  mx-auto p-0 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
-            <a href="#" className="block xl:text-xl sm:text-sm text-white font-alexBrush sm:text-center">
+            <a href="#" className="ml-10 block xl:text-xl sm:text-sm text-white font-alexBrush sm:text-center">
                 <Image
                         src="/3.png"
                         alt="meter"
@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
            
 
-            <ul className="sm:flex sm:items-center sm:justify-between">
+            <ul className="mr-10 sm:flex sm:items-center sm:justify-between">
             <span style={{ width: "100%", height: "70%" }} className="block px-2 xl:text-xl lg:text-lg md:text-md sm:text-sm text-white  font-alexBrush">contact@armatrix.in</span>
                 {/* <li>
                     contact@armatrix.in
