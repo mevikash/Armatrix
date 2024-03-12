@@ -27,7 +27,7 @@ function Timelines() {
         initial='hidden'
         className='text-xl xl:text-8xl lg:text-6xl md:text-4xl sm:text-2xl  font-alexBrush py-20 font-bold mb-0'
         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
-        TimeLine
+        Timeline
       </div>
 
 
@@ -45,7 +45,7 @@ function Timelines() {
           enableQuickJump={false}
           enableLayoutSwitch={false}
           disableNavOnKey={false}
-          cardHeight={10}
+          // cardHeight={10}
           // enableLayoutSwitch={false}
           // hideControls={false}
           // flipLayout={true}
@@ -62,8 +62,8 @@ function Timelines() {
             previous: 'Previous',
           }}
           fontSizes={{
-            cardSubtitle: '1.85rem',
-            cardText: '1.8rem',
+            cardSubtitle: '0.85rem',
+            cardText: '0.8rem',
             cardTitle: '1rem',
             title: '1rem',
           }}
@@ -79,7 +79,7 @@ function Timelines() {
           // slideShowType="reveal"
           focusActiveItemOnLoad
           activeItemIndex={0}
-          cardHeight={200}
+          cardHeight={100}
           itemWidth={400}
           // slideShow
           enableDarkToggle={false}
