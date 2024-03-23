@@ -119,7 +119,6 @@ const Newsletter = () => {
                                 </div>
                             </Carousel>
 
-                            <div className="flex flex-col items-center bg-white py-7 px-5  ">
                                 <div className="flex flex-col items-center bg-white py-8 px-5 border shadow-md lg:mr-0 mb-8 product-details">
                                     <div className="flex flex-col h-full">
                                         <div className="flex justify-between items-center mb-2">
@@ -132,7 +131,6 @@ const Newsletter = () => {
                                         <strong>Key Target:</strong> Aviation Industry (Defence and Commercial)  <br />
                                         <strong>Other Applications: </strong> Snake-like arm can be further developed for use in nuclear reactor inspections, maintainence in oil and gas industries, navigating complex environments, etc.
                                     </p>
-                                </div>
                             </div>
                         </div>
                         <div>
@@ -160,7 +158,6 @@ const Newsletter = () => {
                                 </div>
                             </Carousel>
 
-                            <div className="flex flex-col items-center bg-white py-10 px-5  ">
                                 <div className="flex flex-col items-center bg-white py-8 px-5 border shadow-md lg:mr-0 mb-8 product-details">
                                     <div className="flex flex-col h-full">
                                         <div className="flex justify-between items-center mb-2">
@@ -173,7 +170,6 @@ const Newsletter = () => {
                                         <strong>Key Target:</strong> Mobile unit to FlexFuel                             <br />
                                         <strong>Other Applications: </strong>    Warehouse management, ASRS systems, Autonomous defence mobile units, etc.
                                     </p>
-                                </div>
                             </div>
                         </div>
                     </div>
