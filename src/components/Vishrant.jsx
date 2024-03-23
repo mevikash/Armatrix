@@ -25,8 +25,8 @@ function Timelines() {
 {/* <div className="bg-black bg-opacity-50" style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}></div> */}
       <div
         initial='hidden'
-        className='text-xl xl:text-8xl lg:text-6xl md:text-4xl sm:text-2xl  font-alexBrush py-20 font-bold mb-0'
-        style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
+        className='text-xl xl:text-8xl lg:text-6xl md:text-4xl sm:text-2xl  font-alexBrush py-20 font-bold mb-0 '
+        style={{ display: 'flex', justifyContent: 'center', alignItems: 'center',color: 'white' }}>
         Timeline
       </div>
 

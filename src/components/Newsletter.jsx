@@ -8,28 +8,80 @@ import Image from 'next/image';
 import { fadeIn } from '../../variants';
 
 const Newsletter = () => {
-    const videoRef = useRef(null);
+
+    const videoRef1 = useRef(null);
+    const videoRef2 = useRef(null);
+
+    const handleVideoClick1 = () => {
+        if (videoRef1.current) {
+            videoRef1.current.currentTime = 0; // Reset the video to start from the beginning
+            const playPromise = videoRef1.current.play(); // Start playing the video
+    
+            // Handling browser restrictions
+            if (playPromise !== undefined) {
+                playPromise.then(_ => {
+                    // Automatic playback started!
+                }).catch(error => {
+                    // Auto-play was prevented
+                    // Show a UI element to let the user start playback manually
+                    console.error('Auto-play was prevented:', error);
+                });
+            }
+        }
+    };
+    
+    const handleVideoClick2 = () => {
+        if (videoRef2.current) {
+            videoRef2.current.currentTime = 0; // Reset the video to start from the beginning
+            const playPromise = videoRef2.current.play(); // Start playing the video
+    
+            // Handling browser restrictions
+            if (playPromise !== undefined) {
+                playPromise.then(_ => {
+                    // Automatic playback started!
+                }).catch(error => {
+                    // Auto-play was prevented
+                    // Show a UI element to let the user start playback manually
+                    console.error('Auto-play was prevented:', error);
+                });
+            }
+        }
+    };
+    
 
     useEffect(() => {
-        const video = videoRef.current;
+        const video1 = videoRef1.current;
+        const video2 = videoRef2.current;
 
-        const observer = new IntersectionObserver((entries) => {
+        const observer1 = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    video.play();
+                    video1.play();
                 } else {
-                    video.pause();
+                    video1.pause();
                 }
             });
         });
 
-        observer.observe(video);
+        const observer2 = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    video2.play();
+                } else {
+                    video2.pause();
+                }
+            });
+        });
+
+        observer1.observe(video1);
+        observer2.observe(video2);
 
         return () => {
-            observer.unobserve(video);
+            observer1.unobserve(video1);
+            observer2.unobserve(video2);
         };
     }, []);
-   
+
     return (
         <section style={{ width: "100%", height: "100%" }} className='bg-newsletter bg-fixed bg-cover bg-center bg-no-repeat'>
             <div className='max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8'>
@@ -42,10 +94,8 @@ const Newsletter = () => {
                         PRODUCTS
                     </motion.div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-20 mt-8">
-
-
                         <div>
-                            <Carousel showThumbs={false}>
+                            <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} interval={16000}>
                                 <div style={{ maxWidth: '650px', maxHeight: '700px' }}>
                                     <Image
                                         src="/Render1.png"
@@ -53,49 +103,40 @@ const Newsletter = () => {
                                         width={1080}
                                         height={1080}
                                     />
-                                    <p className="legend" style={{ maxWidth: '650px', maxHeight: '700px' }}>Image</p>
                                 </div>
                                 <div style={{ maxWidth: '650px', maxHeight: '700px' }}>
                                     <video
                                         src="/videosource.mp4"
                                         alt="meter"
                                         width={650}
-                                        height={450}
+                                        height={950}
                                         autoPlay
                                         loop
                                         controls={false} // Disable default browser controls
-                                        ref={videoRef}
+                                        ref={videoRef1}
+                                        onClick={handleVideoClick1} // Add onClick event handler
                                     />
-
-
-                                    <p className="legend" style={{ maxWidth: '650px', maxHeight: '700px' }}>Video</p>
                                 </div>
                             </Carousel>
 
-                            <div className="flex flex-col items-center bg-white py-8 px-5 border shadow-md lg:mr-0 mb-8 xl:text-xl lg:text-lg md:text-md sm:text-sm ">
-                                <div className="flex flex-col h-full">
-                                    <div className="flex justify-between items-center mb-2">
-                                        <p style={{ fontSize: '1rem', fontWeight: 'bold'}} className="regular text-gray-700">FlexFuel V1
-                                        </p>
-                                        <p style={{ fontSize: '1rem' }} className="bold text-black-500">Current TRL: 4
-                                        </p>
+                            <div className="flex flex-col items-center bg-white py-7 px-5  ">
+                                <div className="flex flex-col items-center bg-white py-8 px-5 border shadow-md lg:mr-0 mb-8 product-details">
+                                    <div className="flex flex-col h-full">
+                                        <div className="flex justify-between items-center mb-2">
+                                            <p className="product-name regular text-gray-700"><strong>FlexFuel V1</strong></p>
+                                            <p className="bold text-black-500">   Current TRL: 4</p>
+                                        </div>
                                     </div>
-                                    <p style={{ width: "100%", height: "100%", fontSize: '1rem' }} className="bold mb-2">FlexFuel represents the next generation of hyper-redundant robotic arms tailored specifically for seamless and efficient refueling operations. Equipped with advanced AI algorithms, FlexFuel operates autonomously relieving manpower to do other important tasks.
-                                    </p>
-                            
+                                    <p style={{ width: "100%", height: "100%", fontSize: '1rem' }} className="bold mb-2">FlexFuel represents the next generation of hyper-redundant robotic arms tailored specifically for seamless and efficient refueling operations. Equipped with advanced AI algorithms, FlexFuel operates autonomously relieving manpower to do other important tasks.</p>
                                     <p style={{ width: "100%", height: "100%", fontSize: '1rem' }} className="regular text-gray-700 mb-2">
-
-                                    <strong>Key Target:</strong> Aviation Industry (Defence and Commercial)  <br />
-
+                                        <strong>Key Target:</strong> Aviation Industry (Defence and Commercial)  <br />
                                         <strong>Other Applications: </strong> Snake-like arm can be further developed for use in nuclear reactor inspections, maintainence in oil and gas industries, navigating complex environments, etc.
                                     </p>
                                 </div>
                             </div>
-
-
                         </div>
                         <div>
-                            <Carousel showThumbs={false}>
+                            <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} interval={16000}>
                                 <div style={{ maxWidth: '650px', maxHeight: '700px' }}>
                                     <Image
                                         src="/Render2.png"
@@ -103,52 +144,44 @@ const Newsletter = () => {
                                         width={1080}
                                         height={1080}
                                     />
-                                    <p className="legend" style={{ maxWidth: '650px', maxHeight: '700px' }}>Image</p>
                                 </div>
                                 <div style={{ maxWidth: '650px', maxHeight: '700px' }}>
                                     <video
-                                        src="/videosource.mp4"
+                                        src="/videosource1.mp4"
                                         alt="meter"
                                         width={650}
-                                        height={450}
+                                        height={950}
                                         autoPlay
                                         loop
                                         controls={false} // Disable default browser controls
-                                        ref={videoRef}
+                                        ref={videoRef2}
+                                        onClick={handleVideoClick2} // Add onClick event handler
                                     />
-
-                                    <p className="legend" style={{ maxWidth: '650px', maxHeight: '700px' }}>Video</p>
                                 </div>
                             </Carousel>
 
-                            <div className="flex flex-col items-center bg-white py-8 px-5  border shadow-md  lg:mr-0 mb-8 xl:text-xl lg:text-lg md:text-md sm:text-sm">
-                                <div className="flex flex-col h-full">
-                                    <div className="flex justify-between items-center mb-2">
-                                        <p style={{ fontSize: '1rem', fontWeight: 'bold'}} className="regular text-gray-700">Jerry
-                                        </p>
-                                        <p style={{ fontSize: '1rem' }} className="bold text-black-500">Current TRL: 5
-                                        </p>
+                            <div className="flex flex-col items-center bg-white py-10 px-5  ">
+                                <div className="flex flex-col items-center bg-white py-8 px-5 border shadow-md lg:mr-0 mb-8 product-details">
+                                    <div className="flex flex-col h-full">
+                                        <div className="flex justify-between items-center mb-2">
+                                            <p className="product-name regular text-gray-700"><strong>Jerry</strong></p>
+                                            <p className="bold text-black-500">   Current TRL: 5</p>
+                                        </div>
                                     </div>
-                                    <p style={{ width: "100%", height: "100%", fontSize: '1rem' }} className="bold mb-2">Jerry is an autonomous ground vehicle developed to carry upto 100 kg payload. Enabled with 4-wheel holonomic drive system, it is capable of navigating an obstacle filled environment using it’s vision based perception module. It can detect obstacles, self-localize, navigate, and strategically plan it’s path.
-                                                               
-                                    </p>
-                            
+                                    <p style={{ width: "100%", height: "100%", fontSize: '1rem' }} className="bold mb-2">Jerry is an autonomous ground vehicle developed to carry upto 100 kg payload. Enabled with 4-wheel holonomic drive system, it is capable of navigating an obstacle filled environment using it’s vision based perception module. It can detect obstacles, self-localize, navigate, and strategically plan it’s path.</p>
                                     <p style={{ width: "100%", height: "100%", fontSize: '1rem' }} className="regular text-gray-700 mb-2">
-
-                                    <strong>Key Target:</strong> Mobile unit to FlexFuel                             <br />
-
-                                    <strong>Other Applications: </strong>    Warehouse management, ASRS systems, Autonomous defence mobile units, etc.                            
+                                        <strong>Key Target:</strong> Mobile unit to FlexFuel                             <br />
+                                        <strong>Other Applications: </strong>    Warehouse management, ASRS systems, Autonomous defence mobile units, etc.
                                     </p>
                                 </div>
-                            </div>                  </div>
-
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
+                    </div>
+                    </div>
         </section>
     );
 };
 
-
-
 export default Newsletter;
+
