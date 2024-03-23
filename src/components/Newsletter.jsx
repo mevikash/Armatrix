@@ -16,7 +16,7 @@ const Newsletter = () => {
         if (videoRef1.current) {
             videoRef1.current.currentTime = 0; // Reset the video to start from the beginning
             const playPromise = videoRef1.current.play(); // Start playing the video
-    
+
             // Handling browser restrictions
             if (playPromise !== undefined) {
                 playPromise.then(_ => {
@@ -29,12 +29,12 @@ const Newsletter = () => {
             }
         }
     };
-    
+
     const handleVideoClick2 = () => {
         if (videoRef2.current) {
             videoRef2.current.currentTime = 0; // Reset the video to start from the beginning
             const playPromise = videoRef2.current.play(); // Start playing the video
-    
+
             // Handling browser restrictions
             if (playPromise !== undefined) {
                 playPromise.then(_ => {
@@ -47,7 +47,7 @@ const Newsletter = () => {
             }
         }
     };
-    
+
 
     useEffect(() => {
         const video1 = videoRef1.current;
@@ -119,19 +119,21 @@ const Newsletter = () => {
                                 </div>
                             </Carousel>
 
-                                <div className="flex flex-col items-center bg-white py-8 px-5 border shadow-md lg:mr-0 mb-8 product-details">
-                                    <div className="flex flex-col h-full">
-                                        <div className="flex justify-between items-center mb-2">
-                                            <p className="product-name regular text-gray-700"><strong>FlexFuel V1</strong></p>
-                                            <p className="bold text-black-500">   Current TRL: 4</p>
-                                        </div>
-                                    </div>
-                                    <p style={{ width: "100%", height: "100%", fontSize: '1rem' }} className="bold mb-2">FlexFuel represents the next generation of hyper-redundant robotic arms tailored specifically for seamless and efficient refueling operations. Equipped with advanced AI algorithms, FlexFuel operates autonomously relieving manpower to do other important tasks.</p>
-                                    <p style={{ width: "100%", height: "100%", fontSize: '1rem' }} className="regular text-gray-700 mb-2">
-                                        <strong>Key Target:</strong> Aviation Industry (Defence and Commercial)  <br />
-                                        <strong>Other Applications: </strong> Snake-like arm can be further developed for use in nuclear reactor inspections, maintainence in oil and gas industries, navigating complex environments, etc.
-                                    </p>
-                            </div>
+                            <div className="flex flex-col items-center bg-white py-8 px-5 border shadow-md lg:mr-0 mb-8 product-details">
+            <div className="flex flex-col h-full">
+                <div className="flex justify-between items-center mb-2">
+                    <p className="product-name regular text-gray-700"><strong>FlexFuel V1</strong></p>
+                    <p className="bold text-black-500">    Current TRL: 4</p>
+                </div>
+            </div>
+            <p className="bold mb-2 text-base md:text-sm lg:text-sm xl:text-sm">
+                FlexFuel represents the next generation of hyper-redundant robotic arms tailored specifically for seamless and efficient refueling operations. Equipped with advanced AI algorithms, FlexFuel operates autonomously relieving manpower to do other important tasks.
+            </p>
+            <p className="regular text-gray-700 mb-2 text-base md:text-sm lg:text-sm xl:text-sm">
+                <strong>Key Target:</strong> Aviation Industry (Defence and Commercial)<br />
+                <strong>Other Applications:</strong> Snake-like arm can be further developed for use in nuclear reactor inspections, maintenance in oil and gas industries, navigating complex environments, etc.
+            </p>
+        </div>
                         </div>
                         <div>
                             <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} interval={16000}>
@@ -158,23 +160,27 @@ const Newsletter = () => {
                                 </div>
                             </Carousel>
 
-                                <div className="flex flex-col items-center bg-white py-8 px-5 border shadow-md lg:mr-0 mb-8 product-details">
-                                    <div className="flex flex-col h-full">
-                                        <div className="flex justify-between items-center mb-2">
-                                            <p className="product-name regular text-gray-700"><strong>Jerry</strong></p>
-                                            <p className="bold text-black-500">   Current TRL: 5</p>
-                                        </div>
+                            <div className="flex flex-col items-center bg-white py-8 px-5 border shadow-md lg:mr-0 mb-8 product-details">
+                                <div className="flex flex-col h-full">
+                                    <div className="flex justify-between items-center mb-2">
+                                        <p className="product-name regular text-gray-700"><strong>Jerry</strong></p>
+                                        <p className="bold text-black-500">    Current TRL: 5</p>
                                     </div>
-                                    <p style={{ width: "100%", height: "100%", fontSize: '1rem' }} className="bold mb-2">Jerry is an autonomous ground vehicle developed to carry upto 100 kg payload. Enabled with 4-wheel holonomic drive system, it is capable of navigating an obstacle filled environment using it’s vision based perception module. It can detect obstacles, self-localize, navigate, and strategically plan it’s path.</p>
-                                    <p style={{ width: "100%", height: "100%", fontSize: '1rem' }} className="regular text-gray-700 mb-2">
-                                        <strong>Key Target:</strong> Mobile unit to FlexFuel                             <br />
-                                        <strong>Other Applications: </strong>    Warehouse management, ASRS systems, Autonomous defence mobile units, etc.
-                                    </p>
+                                </div>
+                                <p className="bold mb-2 text-base md:text-sm lg:text-sm xl:text-sm">
+                                    Jerry is an autonomous ground vehicle developed to carry up to 100 kg payload. Enabled with a 4-wheel holonomic drive system, it is capable of navigating an obstacle-filled environment using its vision-based perception module. It can detect obstacles, self-localize, navigate, and strategically plan its path.
+                                </p>
+                                <p className="regular text-gray-700 mb-2 text-base md:text-sm lg:text-sm xl:text-sm">
+                                    <strong>Key Target:</strong> Mobile unit to FlexFuel<br />
+                                    <strong>Other Applications:</strong> Warehouse management, ASRS systems, Autonomous defence mobile units, etc.  
+                                    
+                                                                                                                                                    
+                                </p>
                             </div>
                         </div>
                     </div>
-                    </div>
-                    </div>
+                </div>
+            </div>
         </section>
     );
 };
