@@ -68,15 +68,16 @@ function Timelines() {
             title: '1rem',
           }}
           theme={{
-            primary: "#253E66",
+            primary: "#406b3e",
             // primary: 'red',
-            secondary: 'blue-200',
+            secondary: '#899882',
             cardBgColor: '#e2e8f0',
             titleColor: 'black',
             cardTitleColor: '#84cc16',
             titleColorActive: 'white',
+            underlineColor: '#899882',
           }}
-          // slideShowType="reveal"
+          slideShowType="reveal"
           focusActiveItemOnLoad
           activeItemIndex={0}
           cardHeight={0}
