@@ -117,6 +117,19 @@ const Newsletter = () => {
                                         onClick={handleVideoClick1} // Add onClick event handler
                                     />
                                 </div>
+                                <div style={{ maxWidth: '650px', maxHeight: '700px' }}>
+                                    <video
+                                        src="/videosource1.mp4"
+                                        alt="meter"
+                                        width={650}
+                                        height={950}
+                                        autoPlay
+                                        loop
+                                        controls={false} // Disable default browser controls
+                                        ref={videoRef2}
+                                        onClick={handleVideoClick2} // Add onClick event handler
+                                    />
+                                </div>
                             </Carousel>
 
                             <div className="flex flex-col items-center bg-white py-8 px-5 border shadow-md lg:mr-0 mb-8 product-details">
@@ -136,7 +149,6 @@ const Newsletter = () => {
         </div>
                         </div>
                         <div>
-                            <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} interval={16000}>
                                 <div style={{ maxWidth: '650px', maxHeight: '700px' }}>
                                     <Image
                                         src="/Render2.png"
@@ -145,20 +157,9 @@ const Newsletter = () => {
                                         height={1080}
                                     />
                                 </div>
-                                <div style={{ maxWidth: '650px', maxHeight: '700px' }}>
-                                    <video
-                                        src="/videosource1.mp4"
-                                        alt="meter"
-                                        width={650}
-                                        height={950}
-                                        autoPlay
-                                        loop
-                                        controls={false} // Disable default browser controls
-                                        ref={videoRef2}
-                                        onClick={handleVideoClick2} // Add onClick event handler
-                                    />
-                                </div>
-                            </Carousel>
+                            {/* <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} interval={16000}>
+                                
+                            </Carousel> */}
 
                             <div className="flex flex-col items-center bg-white py-8 px-5 border shadow-md lg:mr-0 mb-8 product-details">
                                 <div className="flex flex-col h-full">
