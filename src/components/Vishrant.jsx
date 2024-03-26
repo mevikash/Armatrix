@@ -72,12 +72,12 @@ function Timelines() {
             // primary: 'red',
             secondary: '#899882',
             cardBgColor: '#e2e8f0',
-            titleColor: 'black',
+            titleColor: '#a5b3af',
             cardTitleColor: '#84cc16',
             titleColorActive: 'white',
             underlineColor: '#899882',
           }}
-          slideShowType="reveal"
+          // slideShowType="reveal"
           focusActiveItemOnLoad
           activeItemIndex={0}
           cardHeight={0}
