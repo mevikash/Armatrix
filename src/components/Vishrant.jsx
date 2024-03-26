@@ -18,7 +18,7 @@ function Timelines() {
   return (
 
 
-    <section className="h-[80vh] bg-white  xl:h-[800px] lg:h-[700px] md:h-[800px] sm:h-[750px]  bg-newsletter bg-fixed bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center " >
+    <section className="h-[80vh] bg-white  xl:h-[700px] lg:h-[700px] md:h-[700px] sm:h-[750px]  bg-newsletter bg-fixed bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center " >
     {/* <section className="h-[80vh] bg-white  xl:h-[800px] lg:h-[800px] md:h-[800px] sm:h-[800px]   flex flex-col justify-center items-center " > */}
 <div className="bg-black bg-opacity-50" style={{ width: "100%", height: "100%" }}>
 
@@ -79,7 +79,7 @@ function Timelines() {
           // slideShowType="reveal"
           focusActiveItemOnLoad
           activeItemIndex={0}
-          cardHeight={60}
+          cardHeight={0}
           itemWidth={0}
           // slideShow
           enableDarkToggle={false}
