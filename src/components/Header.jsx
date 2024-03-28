@@ -52,6 +52,7 @@ const Header = () => {
                                 width={150} // Initial width of the logo
                                 height={150} // Initial height of the logo
                                 priority
+                                className="logo lg:w-36 xl:w-36 md:w-36 sm:w-16"
                             />
                         </motion.div>
                     </a>

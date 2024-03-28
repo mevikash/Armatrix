@@ -16,16 +16,16 @@ const Footer = () => {
                         alt="meter"
                         width={130}
                         height={120}
-                        className="h-full w-auto "
+                        className="lg:w-48 xl:w-48 md:w-48 sm:w-28 "
                     />
             </a>
-            <div className="sm:flex sm:items-center sm:justify-between"> 
-            <span className="block xl:text-xl lg:text-lg md:text-md sm:text-sm text-white font-alexBrush sm:text-center">© 2024 <a href="#" className="font-alexBrush hover:underline">Armatrix</a>. All Rights Reserved.</span>
+            <div className="sm:flex sm:items-center  sm:justify-between"> 
+            <span className="block xl:text-xl  lg:text-lg md:text-md sm:text-sm text-white font-alexBrush sm:text-center">© 2024 <a href="#" className="font-alexBrush hover:underline">Armatrix</a>. All Rights Reserved.</span>
             </div>
            
 
-            <ul className="mr-10 sm:flex sm:items-center sm:justify-between">
-            <span style={{ width: "100%", height: "70%" }} className="block px-2 xl:text-xl lg:text-lg md:text-md sm:text-sm text-white  font-alexBrush">contact@armatrix.in</span>
+            <ul className="mr-16  sm:flex lg:w-48 xl:w-48 md:w-48 sm:w-24 sm:items-center sm:justify-between">
+            <span style={{ width: "90%", height: "70%" }} className="block px-2 xl:text-xl lg:text-lg md:text-md sm:text-sm text-white  font-alexBrush">contact@armatrix.in</span>
                 {/* <li>
                     contact@armatrix.in
                 

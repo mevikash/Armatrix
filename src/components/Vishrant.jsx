@@ -18,25 +18,20 @@ function Timelines() {
   return (
 
 
-    <section className="h-[80vh] bg-white  xl:h-[700px] lg:h-[700px] md:h-[700px] sm:h-[750px]  bg-newsletter bg-fixed bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center " >
+    <section className="h-[80vh] bg-white  xl:h-[700px] lg:h-[700px] md:h-[700px] sm:h-[700px]  bg-newsletter bg-fixed bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center " >
     {/* <section className="h-[80vh] bg-white  xl:h-[800px] lg:h-[800px] md:h-[800px] sm:h-[800px]   flex flex-col justify-center items-center " > */}
 <div className="bg-black bg-opacity-50" style={{ width: "100%", height: "100%" }}>
 
 {/* <div className="bg-black bg-opacity-50" style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}></div> */}
       <div
         initial='hidden'
-        className='text-xl xl:text-8xl lg:text-6xl md:text-4xl sm:text-2xl  font-alexBrush py-20 font-bold mb-0 '
+        className='text-xl xl:text-8xl lg:text-6xl md:text-4xl sm:text-2xl  font-alexBrush lg:py-20 xl:py-20 md:py-20 sm:py-8 font-bold mb-0 '
         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center',color: 'white' }}>
         Timeline
       </div>
 
 
-      <div style={{ width: "95%", 
-  height: "70%", 
-  display: "flex",
-  justifyContent: "center", // Horizontally center the items
-  alignItems: "center"      // Vertically center the items
- }}>
+      <div style={{ width: "100%", height: "70%" }}>
         <Component.Chrono
         
           items={data}
