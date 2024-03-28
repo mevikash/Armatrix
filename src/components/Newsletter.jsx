@@ -115,6 +115,7 @@ const Newsletter = () => {
                                         autoPlay
                                         loop
                                         controls={false} // Disable default browser controls
+                                        muted
                                         ref={videoRef1}
                                         onClick={handleVideoClick1} // Add onClick event handler
                                     />
@@ -127,6 +128,7 @@ const Newsletter = () => {
                                         height={950}
                                         autoPlay
                                         loop
+                                        muted
                                         controls={false} // Disable default browser controls
                                         ref={videoRef2}
                                         onClick={handleVideoClick2} // Add onClick event handler
