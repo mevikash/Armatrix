@@ -31,7 +31,12 @@ function Timelines() {
       </div>
 
 
-      <div style={{ width: "100%", height: "70%" }}>
+      <div style={{ width: "95%", 
+  height: "70%", 
+  display: "flex",
+  justifyContent: "center", // Horizontally center the items
+  alignItems: "center"      // Vertically center the items
+ }}>
         <Component.Chrono
         
           items={data}
