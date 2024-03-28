@@ -136,7 +136,7 @@ const Newsletter = () => {
                                 </div>
                             </Carousel>
 
-                            <div className="flex flex-col xl:h-[300px] lg:h-[300px] md:h-[400px] lg:text-xl xl:text-xl sm:text-xs md:text-lg  bg-white py-8 px-5 border shadow-md lg:mr-0 mb-8 product-details">
+                            <div className="flex flex-col xl:h-[300px] lg:h-[300px] md:h-[380px] lg:text-xl xl:text-xl sm:text-xs md:text-lg  bg-white py-8 px-5 border shadow-md lg:mr-0 mb-8 product-details">
             <div className="flex flex-col h-full">
                 <div className="flex justify-between items-center mb-2">
                     <p className="product-name regular text-gray-700"><strong>FlexFuel V1</strong></p>
@@ -165,7 +165,7 @@ const Newsletter = () => {
                                 
                             </Carousel> */}
 
-                            <div className="flex flex-col xl:h-[300px] lg:h-[300px] md:h-[400px] lg:text-xl xl:text-xl sm:text-xs md:text-lg   bg-white py-8 px-5 border shadow-md lg:mr-0 mb-8 product-details">
+                            <div className="flex flex-col xl:h-[300px] lg:h-[300px] md:h-[380px] lg:text-xl xl:text-xl sm:text-xs md:text-lg   bg-white py-8 px-5 border shadow-md lg:mr-0 mb-8 product-details">
                                 <div className="flex flex-col h-full">
                                     <div className="flex justify-between items-center mb-2">
                                         <p className="product-name regular text-gray-700"><strong>Jerry</strong></p>
