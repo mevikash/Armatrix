@@ -7,6 +7,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from 'next/image';
 import { fadeIn } from '../../variants';
 
+
+
 const Newsletter = () => {
 
     const videoRef1 = useRef(null);
@@ -132,17 +134,17 @@ const Newsletter = () => {
                                 </div>
                             </Carousel>
 
-                            <div className="flex flex-col items-center bg-white py-8 px-5 border shadow-md lg:mr-0 mb-8 product-details">
+                            <div className="flex flex-col xl:h-[300px] lg:h-[300px] md:h-[400px] lg:text-xl xl:text-xl sm:text-xs md:text-lg  bg-white py-8 px-5 border shadow-md lg:mr-0 mb-8 product-details">
             <div className="flex flex-col h-full">
                 <div className="flex justify-between items-center mb-2">
                     <p className="product-name regular text-gray-700"><strong>FlexFuel V1</strong></p>
-                    <p className="bold text-black-500">    Current TRL: 4</p>
+                    <p className="bold text-black-500 ">    Current TRL: 4</p>
                 </div>
             </div>
-            <p className="bold mb-2 text-base md:text-sm lg:text-sm xl:text-sm">
+            <p className="bold mb-2 text-base lg:text-sm xl:text-sm sm:text-xs md:text-sm ">
                 FlexFuel represents the next generation of hyper-redundant robotic arms tailored specifically for seamless and efficient refueling operations. Equipped with advanced AI algorithms, FlexFuel operates autonomously relieving manpower to do other important tasks.
             </p>
-            <p className="regular text-gray-700 mb-2 text-base md:text-sm lg:text-sm xl:text-sm">
+            <p className="regular text-gray-700 mb-2 text-base lg:text-sm xl:text-sm sm:text-xs md:text-sm ">
                 <strong>Key Target:</strong> Aviation Industry (Defence and Commercial)<br />
                 <strong>Other Applications:</strong> Snake-like arm can be further developed for use in nuclear reactor inspections, maintenance in oil and gas industries, navigating complex environments, etc.
             </p>
@@ -161,17 +163,17 @@ const Newsletter = () => {
                                 
                             </Carousel> */}
 
-                            <div className="flex flex-col items-center bg-white py-8 px-5 border shadow-md lg:mr-0 mb-8 product-details">
+                            <div className="flex flex-col xl:h-[300px] lg:h-[300px] md:h-[400px] lg:text-xl xl:text-xl sm:text-xs md:text-lg   bg-white py-8 px-5 border shadow-md lg:mr-0 mb-8 product-details">
                                 <div className="flex flex-col h-full">
                                     <div className="flex justify-between items-center mb-2">
                                         <p className="product-name regular text-gray-700"><strong>Jerry</strong></p>
                                         <p className="bold text-black-500">    Current TRL: 5</p>
                                     </div>
                                 </div>
-                                <p className="bold mb-2 text-base md:text-sm lg:text-sm xl:text-sm">
+                                <p className="bold mb-2 text-base lg:text-sm xl:text-sm sm:text-xs md:text-sm ">
                                     Jerry is an autonomous ground vehicle developed to carry up to 100 kg payload. Enabled with a 4-wheel holonomic drive system, it is capable of navigating an obstacle-filled environment using its vision-based perception module. It can detect obstacles, self-localize, navigate, and strategically plan its path.
                                 </p>
-                                <p className="regular text-gray-700 mb-2 text-base md:text-sm lg:text-sm xl:text-sm">
+                                <p className="regular text-gray-700 mb-2 text-base lg:text-sm xl:text-sm sm:text-xs md:text-sm ">
                                     <strong>Key Target:</strong> Mobile unit to FlexFuel<br />
                                     <strong>Other Applications:</strong> Warehouse management, ASRS systems, Autonomous defence mobile units, etc.  
                                     
