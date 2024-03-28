@@ -165,7 +165,7 @@ const Newsletter = () => {
                                 
                             </Carousel> */}
 
-                            <div className="flex flex-col xl:h-[300px] lg:h-[300px] md:h-[380px] lg:text-xl xl:text-xl sm:py-6 lg:py-8 md:py-8 xl:py-8 sm:text-xs md:text-lg  sm:px-2 lg:px-5 md:px-5 xl:px-5 bg-white py-8 px-5 border shadow-md lg:mr-0 mb-8 product-details">
+                            <div className="flex flex-col xl:h-[300px] lg:h-[300px] md:h-[380px] lg:text-xl xl:text-xl sm:py-2 lg:py-8 md:py-8 xl:py-8 sm:text-xs md:text-lg  sm:px-2 lg:px-5 md:px-5 xl:px-5 bg-white py-8 px-5 border shadow-md lg:mr-0 mb-8 product-details">
                                 <div className="flex flex-col h-full">
                                     <div className="flex justify-between items-center mb-2">
                                         <p className="product-name regular text-gray-700"><strong>Jerry</strong></p>
