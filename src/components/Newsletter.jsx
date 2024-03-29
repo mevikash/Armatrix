@@ -106,7 +106,7 @@ const Newsletter = () => {
                                         height={1080}
                                     />
                                 </div>
-                                <div style={{ maxWidth: '650px', maxHeight: '700px' }}>
+                                <div style={{ maxWidth: '650px', maxHeight: '700px', overflow: 'hidden' }}>
                                     <video
                                         src="/videosource.mp4"
                                         alt="meter"
@@ -114,13 +114,15 @@ const Newsletter = () => {
                                         height={950}
                                         autoPlay
                                         loop
-                                        controls={false} // Disable default browser controls
+                                        playsInline // Ensure video plays inline on iOS
                                         muted
+                                        controls={false} // Disable default browser controls
                                         ref={videoRef1}
                                         onClick={handleVideoClick1} // Add onClick event handler
+                                        style={{ objectFit: 'cover', width: '100%', height: '100%' }} // Ensure video covers entire container
                                     />
                                 </div>
-                                <div style={{ maxWidth: '650px', maxHeight: '700px' }}>
+                                <div style={{ maxWidth: '650px', maxHeight: '700px', overflow: 'hidden' }}>
                                     <video
                                         src="/videosource1.mp4"
                                         alt="meter"
@@ -128,12 +130,15 @@ const Newsletter = () => {
                                         height={950}
                                         autoPlay
                                         loop
+                                        playsInline // Ensure video plays inline on iOS
                                         muted
                                         controls={false} // Disable default browser controls
                                         ref={videoRef2}
                                         onClick={handleVideoClick2} // Add onClick event handler
+                                        style={{ objectFit: 'cover', width: '100%', height: '100%' }} // Ensure video covers entire container
                                     />
                                 </div>
+
                             </Carousel>
 
                             <div className="flex flex-col xl:h-[300px] lg:h-[300px] md:h-[380px] lg:text-xl xl:text-xl sm:text-xs md:text-lg  bg-white sm:py-2 lg:py-8 md:py-8 xl:py-8  sm:px-2 lg:px-5 md:px-5 xl:px-5 border shadow-md lg:mr-0 mb-8 product-details">
@@ -165,7 +170,7 @@ const Newsletter = () => {
                                 
                             </Carousel> */}
 
-                            <div className="flex flex-col xl:h-[300px] lg:h-[300px] md:h-[380px] lg:text-xl xl:text-xl sm:py-2 lg:py-8 md:py-8 xl:py-8 sm:text-xs md:text-lg  sm:px-2 lg:px-5 md:px-5 xl:px-5 bg-white py-8 px-5 border shadow-md lg:mr-0 mb-8 product-details">
+                            <div className="flex flex-col xl:h-[300px] lg:h-[300px] md:h-[380px] lg:text-xl xl:text-xl sm:py-4 lg:py-8 md:py-8 xl:py-8 sm:text-xs md:text-lg  sm:px-2 lg:px-5 md:px-5 xl:px-5 bg-white py-8 px-5 border shadow-md lg:mr-0 mb-8 product-details">
                                 <div className="flex flex-col h-full">
                                     <div className="flex justify-between items-center mb-2">
                                         <p className="product-name regular text-gray-700"><strong>Jerry</strong></p>
