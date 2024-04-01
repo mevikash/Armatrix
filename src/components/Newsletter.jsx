@@ -97,7 +97,7 @@ const Newsletter = () => {
                         className='text-xl items-center xl:text-8xl lg:text-6xl md:text-4xl sm:text-xl shadow rounded-xl font-alexBrush font-bold mb-0 '>
                         PRODUCTS
                     </motion.div>
-                    <div className="grid  xl:grid-cols-1 xl:grid-cols-2 lg:grid-cols-1 lg:grid-cols-2 md:grid-cols-1 md:grid-cols-2 sm:grid-cols-1 sm:grid-cols-2 sm:gap-2 xl:gap-20 md:gap-20 lg:gap-20 mt-8">
+                    <div className="grid  xl:grid-cols-1 xl:grid-cols-2 lg:grid-cols-1 lg:grid-cols-2 md:grid-cols-1 md:grid-cols-2 sm:grid-cols-1 sm:grid-cols-0 sm:gap-2 xl:gap-20 md:gap-20 lg:gap-20 mt-8">
                         <div>
                             <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} interval={16000}>
                                 <div style={{ maxWidth: '650px', maxHeight: '700px' }}>
