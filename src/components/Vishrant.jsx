@@ -31,7 +31,7 @@ function Timelines() {
       </div>
 
 
-      <div style={{ width: "100%", height: "70%" }}>
+      <div style={{ width: "100%", height: "85%" }}>
         <Component.Chrono
         
           items={data}
