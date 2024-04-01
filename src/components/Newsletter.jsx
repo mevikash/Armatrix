@@ -6,7 +6,7 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from 'next/image';
 import { fadeIn } from '../../variants';
-
+import { useMediaQuery } from 'react-responsive';
 
 
 const Newsletter = () => {
@@ -83,10 +83,20 @@ const Newsletter = () => {
             observer2.unobserve(video2);
         };
     }, []);
-
+    const isSmallScreen = useMediaQuery({ query: '(max-width: 768px)' });
     return (
         // <section style={{ width: "100%", height: "100%" }} className=' bg-newsletter w-full h-full bg-newsletter bg-fixed bg-cover bg-center bg-no-repeat bg-[cover]'>
-        <section  className='bg-fixed' style={{ backgroundImage: "url('/b111.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', width: '100%', height: '100%' }}>
+        <section
+            className='bg-fixed'
+            style={{
+                backgroundImage: "url('/b111.png')",
+                backgroundSize: isSmallScreen ? 'contain' : 'cover', // Adjusting background size based on screen size
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                width: '100%',
+                height: '100%'
+            }}
+        >
 
             <div className='max-w-screen-xl mx-auto px-4 sm:px-2 lg:px-8'>
                 <div className='flex text-black flex-wrap justify-center items-center gap-0 lg:py-20 xl:py-20 md:py-20 sm:py-4'>
