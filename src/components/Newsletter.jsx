@@ -86,17 +86,7 @@ const Newsletter = () => {
     const isSmallScreen = useMediaQuery({ query: '(max-width: 768px)' });
     return (
         // <section style={{ width: "100%", height: "100%" }} className=' bg-newsletter w-full h-full bg-newsletter bg-fixed bg-cover bg-center bg-no-repeat bg-[cover]'>
-        <section
-            className='bg-fixed'
-            style={{
-                backgroundImage: "url('/b111.png')",
-                backgroundSize: isSmallScreen ? 'contain' : 'cover', // Adjusting background size based on screen size
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-                width: '100%',
-                height: '100%'
-            }}
-        >
+        <section  className='bg-fixed' style={{ backgroundImage: "url('/b111.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', width: '100%', height: '100%' }}>
 
             <div className='max-w-screen-xl mx-auto px-4 sm:px-2 lg:px-8'>
                 <div className='flex text-black flex-wrap justify-center items-center gap-0 lg:py-20 xl:py-20 md:py-20 sm:py-4'>
@@ -107,7 +97,7 @@ const Newsletter = () => {
                         className='text-xl items-center xl:text-8xl lg:text-6xl md:text-4xl sm:text-xl shadow rounded-xl font-alexBrush font-bold mb-0 '>
                         PRODUCTS
                     </motion.div>
-                    <div className="grid  grid-cols-1 sm:grid-cols-2 sm:gap-2 xl:gap-20 md:gap-20 lg:gap-20 mt-8">
+                    <div className="grid  xl:grid-cols-1 xl:grid-cols-2 lg:grid-cols-1 lg:grid-cols-2 md:grid-cols-1 md:grid-cols-2 sm:grid-cols-1 sm:grid-cols-2 sm:gap-2 xl:gap-20 md:gap-20 lg:gap-20 mt-8">
                         <div>
                             <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} interval={16000}>
                                 <div style={{ maxWidth: '650px', maxHeight: '700px' }}>
