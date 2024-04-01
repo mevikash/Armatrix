@@ -33,7 +33,7 @@ const Hero = () => {
                         <div className='flex flex-col items-center mt-4'>
                             <div className='flex justify-center w-full'>
                             </div>
-                            <p className='text-gray-700 text-[40px]'>   Vishrant Dave    </p>
+                            <p className='text-gray-700 text-[40px]'>   Vishrant Dave   </p>
                             <p className='ml-2 text-gray-700 text-[20px]'>Co-Founder & CEO</p>
                            
                             <p className='text-gray-700 mt-4 flex flex items-center'>
